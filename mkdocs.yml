@@ -1,0 +1,3 @@
+site_name: Vaizr Professional Power UI doc
+dev_addr: '0.0.0.0:8000'
+theme: readthedocs
