@@ -4,8 +4,10 @@
 Vaizr Professional Power UI is a fast, simple and open low-code platform that's geared towards building enterprise ready applications fast. 
 
 ### Host anywhere
-Vaizr builds completely independant war's which run on any Sevlet Engine.  However Vaizr comes also pre-packaged with Tomcat, Apache, PostgreSQL and Netbeans.
-Scripts are available to deploy and run on Amazon automatically. The quickest way to get started is by downloading the Vaizr development virtual machine. The best way to get started is by building the Vaizr development virtual machine. Building the machine yourself will only take an additional 15 minutes and now you know for sure that are no hidden quirks and you can do it yourself on any environment you like. We will show here how to do that on VirtualBox and on AWS.
+Vaizr builds completely independant war's which run on any Sevlet Engine.  However Vaizrdemo download comes prepackaged with Tomcat, Apache, PostgreSQL and NetBeans.
+Scripts are available to deploy and run on Amazon automatically. The quickest way to get started is by downloading the Vaizr development virtual machine.
+
+However building the Vaizr development virtual machine is also easy. Building the machine yourself will only take one more step and an additional 15 minutes and after that you know for sure that are no hidden quirks and you can do it yourself on any environment you like. We will show here how to do that on VirtualBox and on AWS.
 
 ### Great tools available
 There's a stack of good working tools available for Vaizr. Choose between: Vaizr Professional Power UI and Vaizr API Rest gateway, within those toolsets you have many productivity boosters which make your developer live easy, contraollable and fun.  
@@ -13,22 +15,22 @@ Preview your work as you go
 
 ## Download Vaizr development virtual machine
 There are several ways to get started but the quickest way of getting started is to by downloading the [Vaizr development virtual machine](
-https://mega.nz/#!npcnjKID!EpPaU5BV-tkfLXICCh9N37JWfu6HG-fBs43tX9zGQ5c
+https://mega.nz/#!yp9QVLQR!TZ8L4qwLyAfdu4GPIEZPYFq3lSGwNeQBemQ9cReRfyI
 ).
 Before you can run the virtual machine on your host you have to install 
-[Virtual Box](https://www.virtualbox.org/). If you want to run the prepackaged development tools on the virtual machine you also have to install an X-windows client.  
+[Virtual Box](https://www.virtualbox.org/). If you want to run the prepackaged development tools on the virtual machine you also have to install an X-windows client. We also provide some handy host scripts which you can download in a separate zip file.
 So in short you have to execute the following four steps  
 
-1. DownLoad and Install [Virtual Box](https://www.virtualbox.org/).  
+1. Download and Install [Virtual Box](https://www.virtualbox.org/).  
 2. Download and Install [Vaizr development virtual machine](
-https://mega.nz/#!npcnjKID!EpPaU5BV-tkfLXICCh9N37JWfu6HG-fBs43tX9zGQ5c
+https://mega.nz/#!yp9QVLQR!TZ8L4qwLyAfdu4GPIEZPYFq3lSGwNeQBemQ9cReRfyI
 ).
 3. Download and unzip [Vaizr development host scripts](https://vaizrdemo:vaizr19651229@bitbucket.org/vaizr/vaizrdemodeployment/src/bc1719d104979705c6b7626394fcf48f84ad4135/install/vaizrdemohostscripts.zip)  
 4. Download and Install an X-Windows client.  
-     * Fow Mac use [XQuartz](https://www.xquartz.org/).  
+     * For Mac use [XQuartz](https://www.xquartz.org/).  
      * For Windows use [MobaXterm](http://mobaxterm.mobatek.net/).  
 
-You can directly logon to the machine or use SSH to log on. We will first start with the web interface to explore the demo application. We will also use Netbeans to develop a Master Detail screen in the next Chapter
+You can directly logon to the machine or use SSH to log on. We will first start with the web interface to explore the demo application. We will also use NetBeans to develop a Master Detail screen in the next Chapter
 
 ## Getting started
 
@@ -43,12 +45,12 @@ You can directly logon to the machine or use SSH to log on. We will first start 
 
 ### Check Vaizr Development machine & X-Windows
 First of all you can login on the console which is started with Virtualbox
-username : vagrant
-password : vagrant
+> username : `vagrant`  
+> password : `vagrant`
 
-Second you can setup an ssh session
-ssh vagrant@localhost -p 2222
-password : vagrant
+Second you can setup an ssh session  
+> $`ssh vagrant@localhost -p 2222`  
+> password : `vagrant`
 
 If you see something like this below it's ok
 
@@ -104,6 +106,12 @@ This is a bit more cumbersome so for this reason some scripts are prepared which
 If all goes well you should see the following
 ![ubuntu_start_page_mozilla_firefox](./images/ubuntu_start_page_mozilla_firefox.png)
 
+We will do the same for Google-Chrome. Google-Chrome has to be started once to activate the browser for NetBeans. You activate chrome by accepting the following two options.
+![chrome_initiate](./images/chrome_initiate.png)
+
+1. $`. ./google-chrome`
+2. choose `OK`
+
 ## Install NetBeans
 NetBeans is already prepackaged on the vaizrdemo box. However the installation requires some manual steps. Of course you are free to use whichever IDE you prefer like Eclipse or IntelliJ. The main reasons we choose to prepackage with NetBeans are twofold
 
@@ -116,14 +124,21 @@ NetBeans comes out of the box with prepacked support for tomcat. However some ma
 
 > You should see the following screen now
 > ![install_netbeans](./images/install_netbeans.png) 
-
-* Choose `[ ]Apache Tomcat 8.0.27`
  
-> tick Apache , untick GlassFish
+> Deselect GlassFish and select Apache Tomcat
 
-* Accept `[ ]I accept the terms in license agreement`
+* [`  `] GlassFish Server Open Source Edition 4.1.1
+* [`v`] Apache Tomcat 8.0.27
+<br>
+<br>
 
-* Set the explicit path for the JDK `/usr/lib/jvm/java-8-oracle` See screenshot below
+> Accept the license agreement
+
+*  [`v`] I accept the terms in license agreement
+<br>
+<br>
+
+> Set the explicit path for the JDK `/usr/lib/jvm/java-8-oracle` See screenshot below
 
 > ![install_netbeans_set_jdk](./images/install_netbeans_set_jdk.png)
  
@@ -145,3 +160,35 @@ You should see the following screen
  
 > ![netbeans_open_project](./images/netbeans_open_project.png)
 
+* After opening the project you are asked to enter a master password. Just click `Cancel`
+> ![netbeans_enter_masterpassword](./images/netbeans_enter_masterpassword.png)
+
+* Now you get after a while the following screen. Please wait till all the indexes by NetBeans are build. You can see when NetBeans is still busy by looking at the footer of the page
+
+> ![netbeans_vaizrdemo_application_workspace](./images/netbeans_vaizrdemo_application_workspace.png)
+
+* Now click the green traingle in the ribbon. When hoovering the green traingle it should show the text `Run Project(vaizrdemo_application)`. See also above screenshot.
+
+* After clicking the above traingle the google-chrome browser will be started. And you will get the following screen
+> ![chrome_no_webpage_found](./images/chrome_no_webpage_found.png)
+
+One more step and you are up and running. We have to set a specific configuration file in the NetBeans tomcat environment. This step can only be executed after tomcat has been initialized, whihc is done by the previous step.
+
+The configuration file we will set with prepackeged shell script. The easiest way to execute this script is by starting a terminal session from within the NetBeans IDE. The terminal can be found under __W__indow ==> IDE __T__ools ==> T__e__rminal
+> ![netbeans_start_terminal](./images/netbeans_start_terminal.png)
+
+Within the terminal you can run the following script
+
+$`install_vaizrdemo-1.0-SNAPSHOT_xml.sh`
+
+Please be aware that autocomplete works so after typing `install_v` you can just hit `tab` and the line will be completed to `install_vaizrdemo-1.0-SNAPSHOT_xml.sh`
+
+Hit `Return` and after that restart the server by clicking the green triangle
+
+Now you get the following screen in google-chrome
+![chrome_vaizrdemo_logon](./images/chrome_vaizrdemo_logon.png)
+
+Login with
+
+> username : `nanne`  
+> password : `nanneo`
