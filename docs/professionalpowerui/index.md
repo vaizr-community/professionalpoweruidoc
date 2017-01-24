@@ -24,7 +24,7 @@ Before you can run the virtual machine on your host you have to install
 <a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a>.  
 To run the prepackaged development tools on the virtual machine you also have to install an X-windows host. We also provide some handy host scripts which you can download in a separate zip file.  
 So in short you have to execute the following four steps  
-
+<a id="myLink" href="#" onclick="DownloadVaizrDemoBox();return false;">link text</a>
 1. Download and Install <a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a>.  
 2. Download and Install [Vaizr development virtual machine](
 https://mega.nz/#!yp9QVLQR!TZ8L4qwLyAfdu4GPIEZPYFq3lSGwNeQBemQ9cReRfyI
