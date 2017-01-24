@@ -1,14 +1,18 @@
 $(document).ready(function(){
-    var t1 = window.location.pathname
-    if (t1=='/downloads/downloadvaizrdemobox/'){
+    var pathname = window.location.pathname
+    if (pathname.indexOf("downloads/downloadvaizrdemobox/") > 0){
         DownloadVaizrDemoBox();
     }   
 })
 function DownloadVaizrDemoBox() {
-  alert('nanne');
   var str = window.location.href
   var n = str.indexOf("/downloads/downloadvaizrdemobox/")
   var m = "/downloads/downloadvaizrdemobox/".length;
-  alert(str.substr(n+m));
-  window.location = "https://mega.nz/#!yp9QVLQR!TZ8L4qwLyAfdu4GPIEZPYFq3lSGwNeQBemQ9cReRfyI"
+  if (str.substr(n+m).length > 0 ) {
+     alert("Your Download with id : " + str.substr(n+m));
+     window.location = "https://mega.nz/#!yp9QVLQR!TZ8L4qwLyAfdu4GPIEZPYFq3lSGwNeQBemQ9cReRfyI"
+  } else {
+     alert("not a valid download id");
+     window.location = "/";
+  }
 }
