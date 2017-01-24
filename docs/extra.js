@@ -10,7 +10,8 @@ function DownloadVaizrDemoBox() {
   var m = "/downloads/downloadvaizrdemobox/".length;
   if (str.substr(n+m).length > 0 ) {
      alert("Your Download with id : " + str.substr(n+m));
-     window.location = "https://mega.nz/#!yp9QVLQR!TZ8L4qwLyAfdu4GPIEZPYFq3lSGwNeQBemQ9cReRfyI"
+//     window.location = "https://mega.nz/#!yp9QVLQR!TZ8L4qwLyAfdu4GPIEZPYFq3lSGwNeQBemQ9cReRfyI"
+       window.location = "https://www.dropbox.com/s/qbmx635c0rqdjfv/vaizrdemohostscripts.zip"
   } else {
      alert("not a valid download id");
      window.location = "/";
