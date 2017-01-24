@@ -1,3 +1,18 @@
-site_name: Vaizr Professional Power UI doc
+---
+pages:
+  -
+    ? "VaizrProfessionalPowerUI & Vaizr REST API"
+    : index.md
+  -
+    ? "Professional Power UI"
+    :
+      -
+         ? "Getting Started"
+         : professionalpowerui/index.md
+      -
+         ? ""
+         : downloads/downloadvaizrdemobox.md
+site_name: Vaizr Documentation
 dev_addr: '0.0.0.0:8000'
 theme: readthedocs
+extra_javascript: [extra.js]
