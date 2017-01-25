@@ -5,7 +5,7 @@ $(document).ready(function(){
     }   
 })
 function DownloadVaizrDemoBox() {
-  var downloadurl = "https://www.dropbox.com/s/kh4wuagp6tud1tm/vaizrdemobox.ova?dl=0"
+  var downloadurl = "https://www.dropbox.com/s/mc2f40f411eqini/vaizrdemobox.ova?dl=0"
   var str = window.location.href
   var n = str.indexOf("/downloads/downloadvaizrdemobox/")
   var m = "/downloads/downloadvaizrdemobox/".length;
