@@ -17,25 +17,24 @@ However building the Vaizr development virtual machine is also easy. Building th
 ## Getting started
 
 ### Download the different components
-There are several ways to get started but the quickest way of getting started is to by downloading the [Vaizr development virtual machine](
-https://mega.nz/#!yp9QVLQR!TZ8L4qwLyAfdu4GPIEZPYFq3lSGwNeQBemQ9cReRfyI
-).
+There are several ways to get started but the quickest way of getting started is to by downloading the <a href="./../downloads/downloadvaizrdemobox/#1234" target="_blank">Vaizr development virtual machine</a>.  
+
 Before you can run the virtual machine on your host you have to install
 <a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a>.  
-To run the prepackaged development tools on the virtual machine you also have to install an X-windows host. We also provide some handy host scripts which you can download in a separate zip file.  
-So in short you have to execute the following four steps  
-1. Download and Install <a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a>.  
-2. Download and Install [Vaizr development virtual machine](
-https://mega.nz/#!yp9QVLQR!TZ8L4qwLyAfdu4GPIEZPYFq3lSGwNeQBemQ9cReRfyI
-).
-2. Download and Install [Vaizr development virtual machine](./../downloads/downloadvaizrdemobox.html).
-3. Download and unzip [Vaizr development host scripts](./../downloads/vaizrdemohostscripts.zip)  
-4. Download and Install an X-Windows host.  
-     * For Mac use <a href='https://www.xquartz.org/' target='_blank'>XQuartz</a>
-     * For Windows use <a href="http://mobaxterm.mobatek.net/" target="_blank"> MobaXterm</a>.  
-     * Linux provided with a GUI comes with a X-Windos host out of the box
+To run the prepackaged development tools on the virtual machine you also have to install an **X-windows** server. We also provide some handy host scripts which you can download in a separate zip file.  
 
-You can directly logon to the machine or use SSH to log on. We will first start with the web interface to explore the demo application. We will also use NetBeans to develop a Master Detail screen in the next Chapter
+So in short you have to execute the following four steps:  
+
+1. Download and Install <a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a>.  
+2. Download and Install <a href="./../downloads/downloadvaizrdemobox/#1234" target="_blank">Vaizr development virtual machine</a>.  
+3. Download and unzip [Vaizr development host scripts](./../downloads/vaizrdemohostscripts.zip).  
+4. Download and Install an X-Windows server.  
+    
+    * For Mac use <a href='https://www.xquartz.org/' target='_blank'>XQuartz</a>.
+    * Linux provided with a GUI comes with a X-Windows server out of the box.  
+    * For Windows use <a href="http://mobaxterm.mobatek.net/" target="_blank"> MobaXterm</a>.  
+
+You can directly logon to the machine or use SSH to log on. We will first start with X-Windows interface to explore the demo machine. We will also install NetBeans to develop a Master Detail screen in the next Chapter.
 
 ### Run Vaizr Development machine
 1. Start Virtual box, you actually start your virtual machine host.
@@ -46,12 +45,17 @@ You can directly logon to the machine or use SSH to log on. We will first start 
 6. Now select your virtual machine (vaizrdemobox)
 7. Give it a little time to start the Ubuntu distribution with the Vaizr installation running
 
-### Check Vaizr Development machine & X-Windows
+Double-clicking on the `vaizrdemobox.ova` gives the same result as the above seven steps.
+
+### Check Vaizr Development machine
 First of all you can login on the console which is started with Virtualbox
 > username : `vagrant`  
 > password : `vagrant`
 
-Second you can setup an ssh session  
+The next part is different for Windows, we start with Mac and linux, of course when you run bash on windows you an also execute the scripts which are described in the next session.
+
+## Mac and linux
+First you can setup a ssh session  
 > $`ssh vagrant@localhost -p 2222`  
 > password : `vagrant`
 
@@ -83,8 +87,11 @@ If you see something like this below it's ok
 
         vagrant@vagrant-ubuntu-trusty-64:~$
 
-Third you can see if X-windows is working properly
-This is a bit more cumbersome so for this reason some scripts are prepared which you downloaded before as **vaizrdemohostscripts.zip**. Unzip the vaizrdemohostscripts.zip and go with the command prompt in the **cli** subfolder. `cli` stands for command line interface. Here are some scripts which you cab run to start programs on the virtual box.
+Second you can see if X-windows is working properly.  
+
+This is a bit more cumbersome so for this reason some scripts are prepared which you downloaded before as **vaizrdemohostscripts.zip**.  
+
+Unzip the vaizrdemohostscripts.zip and go with the command prompt in the **cli** subfolder. `cli` stands for command line interface. Here are some scripts which you can run to start programs on the virtual box.
 
 1. unzip `vaizrdemohostscripts.zip`
 2. $`cd cli`
@@ -106,13 +113,88 @@ This is a bit more cumbersome so for this reason some scripts are prepared which
 5. choose [1]
 6. $`. ./firefox`
 
-If all goes well you should see the following
-![ubuntu_start_page_mozilla_firefox](./images/ubuntu_start_page_mozilla_firefox.png)
+        The above mentioned scripsts are straightforward. Check it out. 
+        The trick is that we use a private key (a .pem file) 
+        to logon without a password
 
-We will do the same for Google-Chrome. Google-Chrome has to be started once to activate the browser for NetBeans. You activate chrome by accepting the following two options.
-![chrome_initiate](./images/chrome_initiate.png)
+If all goes well you should see the **Ubuntu Start Page Mozilla Firefox**
+
+We will do the same for Google-Chrome. Google-Chrome has to be started once to activate the browser for NetBeans. You activate chrome by accepting the presented two options.
 
 1. $`. ./google-chrome`
+2. choose `OK`
+
+## Windows
+On windows you need to install an **X-server** and you get proper **ssh** support with it. **Mobatek** has a nice free edition which works well.
+
+### Installing MobaXterm
+- go to [http://mobaxterm.mobatek.net](http://mobaxterm.mobatek.net) you will see the following screen.  
+
+    ![mobaxterm_website](./../images/mobaxterm_website.png)  
+
+- After clicking `GET MOBAXTERM NOW!` you see the follwing screen.  
+
+    ![mobaxterm_download](./../images/mobaxterm_download.png)
+
+
+- Choose the `Home Edition, Download now`  
+
+    ![mobaxterm_installer](./../images/mobaxterm_installer.png)
+
+- Choose the `Installer edition`  
+
+    ![mobaxterm_download_installer](./../images/mobaxterm_download_installer.png)
+
+- Choose `Save file`  
+
+    ![mobaxterm_run_installer](./../images/mobaxterm_run_installer.png)
+
+- Choose `Run`  
+
+    ![mobaxterm_installer_wizard](./../images/mobaxterm_installer_wizard.png)  
+
+- Choose `Next`  
+
+    ![mobaxterm_accept_licence](./../images/mobaxterm_accept_licence.png)  
+
+- Choose `I accept the terms in the Licence Agreement`  
+
+    ![mobaxterm_allow_install](./../images/mobaxterm_allow_install.png)  
+
+- Allow the program to run by clicking `Yes`  
+
+    ![mobaxterm_install_completed](./../images/mobaxterm_install_completed.png)    
+
+- Click `Finish`  
+- Now the program is installed and you can start it by clicking the Icon on your desktop. You see the following screen now.  
+
+    ![mobaxterm_startscreen](./../images/mobaxterm_startscreen.png)  
+
+- After clicking on `Start a new remote session` you get the follwing screen.  
+
+    ![mobaxterm_session_screen](./../images/mobaxterm_session_screen.png)  
+
+- Here you can also choose to `Use private key`
+
+- Unzip the **vaizrdemohostscripts.zip** file and the private keys can be found in the `..\cli\pem` folder. Choose for the **l**ocal**v**irtual**m**achine the `lvmvaizrdemobox.pem` file.  
+
+
+##
+##
+##
+
+
+
+1. $`firefox`
+
+
+If all goes well you should see the following
+![ubuntu_start_page_mozilla_firefox](./../images/ubuntu_start_page_mozilla_firefox.png)
+
+We will do the same for Google-Chrome. Google-Chrome has to be started once to activate the browser for NetBeans. You activate chrome by accepting the following two options.
+![chrome_initiate](./../images/chrome_initiate.png)
+
+1. $`google-chrome`
 2. choose `OK`
 
 ## Install NetBeans
@@ -123,7 +205,8 @@ NetBeans is already prepackaged on the vaizrdemo box. However the installation r
 
 NetBeans comes out of the box with prepacked support for tomcat. However some manual steps are required before we can start to work with NetBeans
 
-* $`. ./install_netbeans`
+* host  $`. ./install_netbeans`
+* guest $`install_netbeans`
 
 > You should see the following screen now
 > ![install_netbeans](./images/install_netbeans.png)
