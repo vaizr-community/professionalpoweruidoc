@@ -10,10 +10,10 @@ function DownloadVaizrDemoBox() {
   var n = str.indexOf("/downloads/downloadvaizrdemobox/")
   var m = "/downloads/downloadvaizrdemobox/".length;
   if (str.substr(n+m).length > 0 ) {
-     alert("Your Download with id : " + str.substr(n+m));
+//     alert("Your Download with id : " + str.substr(n+m));
      window.location = downloadurl
   } else {
-     alert("not a valid download id");
+//     alert("not a valid download id");
      window.location = "/";
   }
 }
