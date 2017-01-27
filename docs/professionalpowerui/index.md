@@ -1,10 +1,10 @@
 # Welcome to Vaizr Professional Power UI
 
 ## Overview
-Vaizr Professional Power UI is a fast, simple and open low-code platform that's geared towards building enterprise ready applications fast.
+Vaizr Professional Power UI is a fast, simple and open low-code platform that's geared towards building enterprise-ready applications fast.
 
 ### Host anywhere
-Vaizr builds completely independant war's which run on any Sevlet Engine.  However Vaizrdemo download comes prepackaged with Tomcat, Apache, PostgreSQL and NetBeans which is installed on Ubuntu 14.04 LTS.
+Vaizr builds completely independent war's, which run on any Sevlet Engine.  However Vaizrdemo download comes prepackaged with Tomcat, Apache, PostgreSQL and NetBeans which is installed on Ubuntu 14.04 LTS.
 
 The demo development environment runs completely on the ubuntu box. The GUI of NetBeans and the different browsers like google-chrome and firefox are displayed to you via **X-Windows**. The X-Windows software on your machine is called the **host** or **server**. The X-Windows part on the remote machine, the vaizrdemobox either on VirtualBox or on AWS are called the **guest** or **client**.
 
@@ -12,7 +12,7 @@ This client–server terminology – the user's terminal being the server and th
 
 The quickest way to get started is by downloading the Vaizr development virtual machine.
 
-However building the Vaizr development virtual machine is also easy. Building the machine yourself will only take one more step and an additional 15 minutes and after that you know for sure that are no hidden quirks and you can do it yourself on any environment you like. Scripts are available to deploy and run on Amazon automatically. We will show here how to do that on VirtualBox and on AWS.
+However building the Vaizr development virtual machine is also easy. Building the machine yourself will only take one more step and an additional 15 minutes and after that you know for sure that are no hidden quirks and you can do it yourself on any environment you like. Scripts are available to deploy and run on Amazon automatically. In this documentation we will show  how to do that on VirtualBox and on AWS.
 
 ## Getting started
 
