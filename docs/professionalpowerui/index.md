@@ -27,7 +27,7 @@ So in short you have to execute the following four steps:
 
 1. Download and Install <a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a>.  
 2. Download and Install <a href="./../downloads/leavemail" target="_blank">Vaizr development virtual machine</a>.  
-3. Download and Unzip [Vaizr development host scripts](./../downloads/vaizrdemohostscripts.zip).  
+3. Download and Unzip <a href="./../downloads/leavemail" target="_blank">Vaizr development host scripts</a>  
 4. Download and Install an X-Windows server.  
     
     * For Mac use <a href='https://www.xquartz.org/' target='_blank'>XQuartz</a>.
@@ -47,17 +47,34 @@ You can directly logon to the machine or use SSH to log on. We will first start 
 
 Double-clicking on the `vaizrdemobox.ova` gives the same result as the above seven steps.
 
+### Virtual box needs an enabled VT-x
+
+When running on Windows, it is possible that you get the following error in Virtual Box `VT-x is disabled in the BIOS for all CPU modes`  
+
+
+![virtual_box_vtx_is_disabled_error](./../images/virtual_box_vtx_is_disabled_error.png)
+
+The trick is to `enable VT-x in the BIOS`
+
+You may have virtualization disabled on the host computer. To enable:
+
+    Go to your host computer's BIOS (press F12, or Delete, or F2, ... depends on computer).
+    Find some options regarding virtualization. E.g. recent Lenovo's have it under Security / Virtualization.
+    Enable what's there to enable. E.g. VT-d technology [Enable].
+
+
+
 ### Check Vaizr Development machine
 First of all you can login on the console which is started with Virtualbox
-> username : `vagrant`  
-> password : `vagrant`
+> username : `vaizrdemo`  
+> password : `vaizrdemo`
 
 The next part is different for Windows, we start with Mac and linux, of course when you run bash on windows you an also execute the scripts which are described in the next session.
 
 ## Mac and linux
 First you can setup a ssh session  
-> $`ssh vagrant@localhost -p 2222`  
-> password : `vagrant`
+> $`ssh vaizrdemo@localhost -p 2233`  
+> password : `vaizrdemo`
 
 If you see something like this below it's ok
 
@@ -85,7 +102,7 @@ If you see something like this below it's ok
 
 
 
-        vagrant@vagrant-ubuntu-trusty-64:~$
+        vaizrdemo@ubuntu-amd64:~$
 
 Second you can see if X-windows is working properly.  
 

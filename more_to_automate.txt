@@ -1,0 +1,31 @@
+more_to_automate.txt
+
+Create Virtualbox with commandline
+
+VBoxManage
+
+https://www.virtualbox.org/manual/ch08.html
+
+
+Creating sudo users with ansible
+
+- name: Make sure we have a 'wheel' group
+  group:
+    name: wheel
+    state: present
+
+- name: Allow 'wheel' group to have passwordless sudo
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^%wheel'
+    line: '%wheel ALL=(ALL) NOPASSWD: ALL'
+
+- name: Add sudoers users to wheel group
+  user: name=deployer groups=wheel append=yes state=present createhome=yes
+
+
+- name: Set up authorized keys for the deployer user
+  authorized_key: user=deployer key="{{item}}"
+  with_file:
+    - /home/railsdev/.ssh/id_rsa.pub
