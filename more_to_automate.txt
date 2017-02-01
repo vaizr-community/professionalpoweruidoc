@@ -29,3 +29,6 @@ Creating sudo users with ansible
   authorized_key: user=deployer key="{{item}}"
   with_file:
     - /home/railsdev/.ssh/id_rsa.pub
+
+mobaxterm portable version
+https://www.portablefreeware.com/?id=1952

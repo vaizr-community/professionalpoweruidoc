@@ -145,7 +145,7 @@ We will do the same for Google-Chrome. Google-Chrome has to be started once to a
 On windows you need to install an **X-server** and you get proper **ssh** support with it. **Mobatek** has a nice free edition which works well.
 
 ### Installing MobaXterm
-- go to [http://mobaxterm.mobatek.net](http://mobaxterm.mobatek.net) you will see the following screen.  
+- go to <a href="http://mobaxterm.mobatek.net" target="_blank">http://mobaxterm.mobatek.net</a> you will see the following screen.  
 
     ![mobaxterm_website](./../images/mobaxterm_website.png)  
 
