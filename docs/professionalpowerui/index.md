@@ -3,7 +3,7 @@
 ## Overview
 Vaizr Professional Power UI is a fast, simple and open low-code platform that's geared towards building enterprise-ready applications fast.
 
-### Host anywhere
+### Vaizrdemobox pre-build Ubuntu 14.04 
 Vaizr builds completely independent war's, which run on any Sevlet Engine.  However Vaizrdemo download comes prepackaged with Tomcat, Apache, PostgreSQL and NetBeans which is installed on Ubuntu 14.04 LTS.
 
 The demo development environment runs completely on the ubuntu box. The GUI of NetBeans and the different browsers like google-chrome and firefox are displayed to you via **X-Windows**. The X-Windows software on your machine is called the **host** or **server**. The X-Windows part on the remote machine, the vaizrdemobox either on VirtualBox or on AWS are called the **guest** or **client**.
@@ -78,8 +78,8 @@ First you can setup a ssh session
 
 If you see something like this below it's ok
 
-        Warning: Permanently added '[127.0.0.1]:2222' (ECDSA) to the list of known hosts.
-        vagrant@127.0.0.1's password:
+        Warning: Permanently added '[127.0.0.1]:2233' (ECDSA) to the list of known hosts.
+        vaizrdemo@127.0.0.1's password:
         Welcome to Ubuntu 14.04.4 LTS (GNU/Linux 3.13.0-83-generic x86_64)
 
          * Documentation:  https://help.ubuntu.com/
@@ -144,7 +144,7 @@ We will do the same for Google-Chrome. Google-Chrome has to be started once to a
 ## Windows
 On windows you need to install an **X-server** and you get proper **ssh** support with it. **Mobatek** has a nice free edition which works well.
 
-### Installing MobaXterm
+### Getting MobaXterm
 - go to <a href="http://mobaxterm.mobatek.net" target="_blank">http://mobaxterm.mobatek.net</a> you will see the following screen.  
 
     ![mobaxterm_website](./../images/mobaxterm_website.png)  
@@ -158,60 +158,51 @@ On windows you need to install an **X-server** and you get proper **ssh** suppor
 
     ![mobaxterm_installer](./../images/mobaxterm_installer.png)
 
-- Choose the `Installer edition`  
+#### MobaXterm Portable Edition
+- Choose the `Portable edition`  
+- Choose the `File save` and `OK` 
 
-    ![mobaxterm_download_installer](./../images/mobaxterm_download_installer.png)
+    ![mobaxterm_download_installer](./../images/mobaxterm_download_portable.png)
 
-- Choose `Save file`  
+- Choose `Extract`
 
-    ![mobaxterm_run_installer](./../images/mobaxterm_run_installer.png)
 
-- Choose `Run`  
+    ![mobaxterm_extract](./../images/mobaxterm_extract.png)
 
-    ![mobaxterm_installer_wizard](./../images/mobaxterm_installer_wizard.png)  
+- Extract to `C:\tools\MobaXterm_v9.4`
 
-- Choose `Next`  
+    ![mobaxterm_extract_destination](./../images/mobaxterm_extract_destination.png)
 
-    ![mobaxterm_accept_licence](./../images/mobaxterm_accept_licence.png)  
+- Double Click on `MobaXterm_Personal_9.4`
 
-- Choose `I accept the terms in the Licence Agreement`  
+    ![mobaxterm_start_execute](./../images/mobaxterm_start_execute.png)
 
-    ![mobaxterm_allow_install](./../images/mobaxterm_allow_install.png)  
+- You see the MobaXterm start screen now.  
 
-- Allow the program to run by clicking `Yes`  
+    ![mobaxterm_startscreen](./../images/mobaxterm_startscreen.png)
 
-    ![mobaxterm_install_completed](./../images/mobaxterm_install_completed.png)    
+- After clicking on `Start a new remote session` and opening the `Advanced SSH settings` you see the session start screen.  
 
-- Click `Finish`  
-- Now the program is installed and you can start it by clicking the Icon on your desktop. 
+    ![mobaxterm_session_screen](./../images/mobaxterm_session_screen.png)
 
-    ![mobaxterm_icon_on_desktop](./../images/mobaxterm_icon_on_desktop.png)  
-
-- You see the following screen now.  
-
-    ![mobaxterm_startscreen](./../images/mobaxterm_startscreen.png)  
-
-- After clicking on `Start a new remote session` you get the follwing screen.  
-
-    ![mobaxterm_session_screen](./../images/mobaxterm_session_screen.png)  
+- You can logon with a password `vaizrdemo` or with a private key, in the latter case follow the steps below. A private key is provided in the **vaizrdemohostscripts.zip** file. 
 
 - Here you can also choose to `Use private key`
 
-- Unzip the **vaizrdemohostscripts.zip** file and the private keys can be found in the `..\cli\pem` folder. Choose for the **l**ocal**v**irtual**m**achine the `lvmvaizrdemobox.pem` file.  
-
-- Create for example a directory C:\tools and unzip **vaizrdemohostscripts.zip** file in here.
-
-- Go back to the MobaXterm screen and fill in the following values:
+- Unzip the **vaizrdemohostscripts.zip** file in `C:\TOOLS` and the private keys can be found in the `..\cli\pem` folder. Choose for the **l**ocal**v**irtual**m**achine the `lvmvaizrdemobox.pem` file.  
+<br>
+- In the MobaXterm remote sessionscreen fill in the following values:
 
        - Remote host `localhost`
-       - `v` Specify username `vagrant`
-       - Port `2222`
+       - `v` Specify username `vaizrdemo`
+       - Port `2233`
        - `v` Use private key `C:\tools\vaizrdemohostscripts\cli\pem\lvmvaizrdemobox.pem`  
 
 - Click the OK button as you can see at the above screenshot
 
 - If you see something like this below it's ok  
 
+    ![mobaxterm_run_session](./../images/mobaxterm_run_session.png)
 
           Welcome to Ubuntu 14.04.4 LTS (GNU/Linux 3.13.0-83-generic x86_64)
 
@@ -235,14 +226,19 @@ On windows you need to install an **X-server** and you get proper **ssh** suppor
 
 
 
-          vagrant@vagrant-ubuntu-trusty-64:~$
+          vaizrdemo@ubuntu-amd64:~$
 
-- Second you can see if X-windows is working properly.
+- Check if X-windows is working properly.
 - Type after the `$` command prompt `firefox` and hit return
 - $`firefox`
 
+    ![mobaxterm_start_firefox](./../images/mobaxterm_start_firefox.png)
 
-    If all goes well you should see the following
+- Ignore the errors which flow over your terminal screen, it's ok as long as you see the firefox screen starting.
+    ![mobaxterm_firefox_with_session](./../images/mobaxterm_firefox_with_session.png)
+
+- The firefox start screen.
+
     ![mobaxterm_firefox](./../images/mobaxterm_firefox.png)
 
 - We will do the same for Google-Chrome. Google-Chrome has to be started once to activate the browser for NetBeans. You activate chrome by accepting the following two options.  
