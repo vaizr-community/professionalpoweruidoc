@@ -16,7 +16,7 @@ However building the Vaizr development virtual machine is also easy. Building th
 
 ## Getting started
 
-### Download the different components
+### <a href="./../downloads/leavemail" target="_blank">Download the different components</a>
 There are several ways to get started but the quickest way of getting started is to by downloading the <a href="./../downloads/leavemail" target="_blank">Vaizr development virtual machine</a>.  
 
 Before you can run the virtual machine on your host you have to install
