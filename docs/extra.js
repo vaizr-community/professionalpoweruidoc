@@ -9,11 +9,12 @@ function DownloadVaizrDemoBox() {
   var str = window.location.href
   var n = str.indexOf("/downloads/downloadvaizrdemobox/")
   var m = "/downloads/downloadvaizrdemobox/".length;
-  if (str.substr(n+m).length > 0 ) {
+// Todo make call to webservice for giving valid id
+  if ((str.substr(n+m).length > 0) && (str.substr(n+m) == "#tbcqa4gjnyvneg1mbzzn" )) {
 //     alert("Your Download with id : " + str.substr(n+m));
      window.location = downloadurl
   } else {
-//     alert("not a valid download id");
+     alert("not a valid download id");
      window.location = "/";
   }
 }

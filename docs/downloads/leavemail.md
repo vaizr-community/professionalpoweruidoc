@@ -1,10 +1,6 @@
 Hi,  
 
-To download the vaizrdemobox, you have to leave your emailadress here and you will get a download link in your mailbox.
-
-Kind Regards,
-
-The Vaizr team
+To download the vaizrdemobox, you have to leave your emailadress here and you will get a download link in your mailbox.  
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -31,3 +27,13 @@ The Vaizr team
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='LINKID';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
+If your email is already subscribed to Vaizr then you get the following message:  
+<br>
+**your_email** is already subscribed to list Vaizr. `Click here to update your profile.`  
+<br>
+Update your profile and you will get a mail with the download link again.
+
+
+Kind Regards,
+
+The Vaizr team
