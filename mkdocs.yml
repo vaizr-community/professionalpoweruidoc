@@ -18,6 +18,12 @@ pages:
   -
     ? "Leave email for download vaizrdemobox"
     : downloads/leavemail.md
+  -
+    ? "Appendix"
+    :
+      -  
+         ? "Onboarding"
+         : appendix/onboarding.md
 site_name: Vaizr Documentation
 dev_addr: '0.0.0.0:8000'
 theme: readthedocs
