@@ -9,21 +9,27 @@ pages:
       -
          ? "Getting Started"
          : professionalpowerui/index.md
+  # -
+  #   ? "Vaizr REST API"
+  #   :
+  #     -
+  #        ? ""
+  #        : restapi/index.md
+  -
+    ? "Appendix"
+    :
+      -
+         ? "Leave email for download vaizrdemobox"
+         : downloads/leavemail.md
+      -  
+         ? "Onboarding"
+         : appendix/onboarding.md
       -
          ? "From Ubuntu 14.04 to virtualdemobox"
          :  professionalpowerui/from_ubuntu_to_vaizrdemobox.md
       -
          ? ""
          : downloads/downloadvaizrdemobox.md
-  -
-    ? "Leave email for download vaizrdemobox"
-    : downloads/leavemail.md
-  -
-    ? "Appendix"
-    :
-      -  
-         ? "Onboarding"
-         : appendix/onboarding.md
 site_name: Vaizr Documentation
 dev_addr: '0.0.0.0:8000'
 theme: readthedocs
