@@ -1,0 +1,988 @@
+Nannes-MacBook-Pro:install nosinga$ ./make_vaizrdemobox_on_lvb.sh 
+********** start make_vaizrdemobox.sh on virtualbox **********
+Tue Feb 7 13:51:13 CET 2017
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /Users/nosinga/Dropbox/vaizrdemodownload_extras/ubuntu1404/ubuntu-14.04-server-amd64.ova...
+OK.
+Disks:
+  vmdisk1	19327352832	-1	http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized	ubuntu-14.04-server-amd64-disk1.vmdk	-1	-1	
+
+Virtual system 0:
+ 0: Suggested OS type: "Ubuntu_64"
+    (change with "--vsys 0 --ostype <type>"; use "list ostypes" to list all possible values)
+ 1: VM name specified with --vmname: "vaizrdemobox"
+ 2: Description specified with --description: "vaizrdemo / vaizrdemo ; ubuntu / reverse"
+ 3: Number of CPUs: 1
+    (change with "--vsys 0 --cpus <n>")
+ 4: Guest memory specified with --memory: 4096 MB
+ 5: Sound card (appliance expects "", can change on import)
+    (disable with "--vsys 0 --unit 5 --ignore")
+ 6: USB controller -- disabled
+ 7: Network adapter: orig NAT, config 3, extra slot=0;type=NAT
+ 8: CD-ROM
+    (disable with "--vsys 0 --unit 8 --ignore")
+ 9: IDE controller, type PIIX4
+    (disable with "--vsys 0 --unit 9 --ignore")
+10: IDE controller, type PIIX4
+    (disable with "--vsys 0 --unit 10 --ignore")
+11: SATA controller, type AHCI
+    (disable with "--vsys 0 --unit 11 --ignore")
+12: Hard disk image: source image=ubuntu-14.04-server-amd64-disk1.vmdk, target path=/Users/nosinga/VirtualBox VMs/ubuntu-14.04-server-amd64/ubuntu-14.04-server-amd64-disk1.vmdk, controller=11;channel=0
+    (change target path with "--vsys 0 --unit 12 --disk path";
+    disable with "--vsys 0 --unit 12 --ignore")
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Successfully imported the appliance.
+Waiting for VM "vaizrdemobox" to power on...
+VM "vaizrdemobox" has been successfully started.
+wait 20 seconds
+   20
+********** logon with ubuntu user **********
+Tue Feb 7 13:51:43 CET 2017
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Warning: Permanently added '[127.0.0.1]:2222' (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 14.04 LTS (GNU/Linux 3.13.0-24-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Tue Feb  7 13:51:27 CET 2017
+
+  System load:  0.0               Processes:           78
+  Usage of /:   6.3% of 17.10GB   Users logged in:     0
+  Memory usage: 1%                IP address for eth0: 10.0.2.15
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+0 packages can be updated.
+0 updates are security updates.
+
+[sudo] password for ubuntu: %sudo ALL=(ALL) NOPASSWD: ALL
+Get:1 http://security.ubuntu.com trusty-security InRelease [65.9 kB]
+Get:2 http://security.ubuntu.com trusty-security/main Sources [124 kB]
+Ign http://us.archive.ubuntu.com trusty InRelease
+Get:3 http://security.ubuntu.com trusty-security/restricted Sources [4637 B]
+Get:4 http://security.ubuntu.com trusty-security/universe Sources [49.3 kB]
+Get:5 http://us.archive.ubuntu.com trusty-updates InRelease [65.9 kB]
+Get:6 http://security.ubuntu.com trusty-security/multiverse Sources [3208 B]
+Get:7 http://security.ubuntu.com trusty-security/main amd64 Packages [578 kB]
+Get:8 http://us.archive.ubuntu.com trusty-backports InRelease [65.9 kB]
+Get:9 http://security.ubuntu.com trusty-security/restricted amd64 Packages [13.4 kB]
+Get:10 http://security.ubuntu.com trusty-security/universe amd64 Packages [151 kB]
+Get:11 http://us.archive.ubuntu.com trusty Release.gpg [933 B]
+Get:12 http://security.ubuntu.com trusty-security/multiverse amd64 Packages [4136 B]
+Get:13 http://security.ubuntu.com trusty-security/main i386 Packages [539 kB]
+Get:14 http://us.archive.ubuntu.com trusty-updates/main Sources [390 kB]
+Get:15 http://security.ubuntu.com trusty-security/restricted i386 Packages [13.1 kB]
+Get:16 http://security.ubuntu.com trusty-security/universe i386 Packages [151 kB]
+Get:17 http://security.ubuntu.com trusty-security/multiverse i386 Packages [4284 B]
+Get:18 http://security.ubuntu.com trusty-security/main Translation-en [320 kB]
+Get:19 http://us.archive.ubuntu.com trusty-updates/restricted Sources [5911 B]
+Get:20 http://security.ubuntu.com trusty-security/multiverse Translation-en [2201 B]
+Get:21 http://us.archive.ubuntu.com trusty-updates/universe Sources [173 kB]
+Get:22 http://security.ubuntu.com trusty-security/restricted Translation-en [3357 B]
+Get:23 http://security.ubuntu.com trusty-security/universe Translation-en [88.7 kB]
+Get:24 http://us.archive.ubuntu.com trusty-updates/multiverse Sources [7535 B]
+Get:25 http://us.archive.ubuntu.com trusty-updates/main amd64 Packages [943 kB]
+Get:26 http://us.archive.ubuntu.com trusty-updates/restricted amd64 Packages [16.4 kB]
+Get:27 http://us.archive.ubuntu.com trusty-updates/universe amd64 Packages [397 kB]
+Get:28 http://us.archive.ubuntu.com trusty-updates/multiverse amd64 Packages [14.0 kB]
+Get:29 http://us.archive.ubuntu.com trusty-updates/main i386 Packages [903 kB]
+Get:30 http://us.archive.ubuntu.com trusty-updates/restricted i386 Packages [16.2 kB]
+Get:31 http://us.archive.ubuntu.com trusty-updates/universe i386 Packages [399 kB]
+Get:32 http://us.archive.ubuntu.com trusty-updates/multiverse i386 Packages [14.4 kB]
+Get:33 http://us.archive.ubuntu.com trusty-updates/main Translation-en [465 kB]
+Get:34 http://us.archive.ubuntu.com trusty-updates/multiverse Translation-en [7340 B]
+Get:35 http://us.archive.ubuntu.com trusty-updates/restricted Translation-en [3847 B]
+Get:36 http://us.archive.ubuntu.com trusty-updates/universe Translation-en [210 kB]
+Get:37 http://us.archive.ubuntu.com trusty-backports/main Sources [9652 B]
+Get:38 http://us.archive.ubuntu.com trusty-backports/restricted Sources [28 B]
+Get:39 http://us.archive.ubuntu.com trusty-backports/universe Sources [35.3 kB]
+Get:40 http://us.archive.ubuntu.com trusty-backports/multiverse Sources [1898 B]
+Get:41 http://us.archive.ubuntu.com trusty-backports/main amd64 Packages [13.3 kB]
+Get:42 http://us.archive.ubuntu.com trusty-backports/restricted amd64 Packages [28 B]
+Get:43 http://us.archive.ubuntu.com trusty-backports/universe amd64 Packages [43.2 kB]
+Get:44 http://us.archive.ubuntu.com trusty-backports/multiverse amd64 Packages [1571 B]
+Get:45 http://us.archive.ubuntu.com trusty-backports/main i386 Packages [13.3 kB]
+Get:46 http://us.archive.ubuntu.com trusty-backports/restricted i386 Packages [28 B]
+Get:47 http://us.archive.ubuntu.com trusty-backports/universe i386 Packages [43.2 kB]
+Get:48 http://us.archive.ubuntu.com trusty-backports/multiverse i386 Packages [1552 B]
+Get:49 http://us.archive.ubuntu.com trusty-backports/main Translation-en [7493 B]
+Get:50 http://us.archive.ubuntu.com trusty-backports/multiverse Translation-en [1215 B]
+Get:51 http://us.archive.ubuntu.com trusty-backports/restricted Translation-en [28 B]
+Get:52 http://us.archive.ubuntu.com trusty-backports/universe Translation-en [36.8 kB]
+Get:53 http://us.archive.ubuntu.com trusty Release [58.5 kB]
+Get:54 http://us.archive.ubuntu.com trusty/main Sources [1064 kB]
+Get:55 http://us.archive.ubuntu.com trusty/restricted Sources [5433 B]
+Get:56 http://us.archive.ubuntu.com trusty/universe Sources [6399 kB]
+Get:57 http://us.archive.ubuntu.com trusty/multiverse Sources [174 kB]
+Get:58 http://us.archive.ubuntu.com trusty/main amd64 Packages [1350 kB]
+Get:59 http://us.archive.ubuntu.com trusty/restricted amd64 Packages [13.0 kB]
+Get:60 http://us.archive.ubuntu.com trusty/universe amd64 Packages [5859 kB]
+Get:61 http://us.archive.ubuntu.com trusty/multiverse amd64 Packages [132 kB]
+Get:62 http://us.archive.ubuntu.com trusty/main i386 Packages [1348 kB]
+Get:63 http://us.archive.ubuntu.com trusty/restricted i386 Packages [13.4 kB]
+Get:64 http://us.archive.ubuntu.com trusty/universe i386 Packages [5866 kB]
+Get:65 http://us.archive.ubuntu.com trusty/multiverse i386 Packages [134 kB]
+Hit http://us.archive.ubuntu.com trusty/main Translation-en
+Hit http://us.archive.ubuntu.com trusty/multiverse Translation-en
+Hit http://us.archive.ubuntu.com trusty/restricted Translation-en
+Get:66 http://us.archive.ubuntu.com trusty/universe Translation-en [4089 kB]
+Fetched 32.9 MB in 46s (708 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  libgmp10 libyaml-0-2 python-crypto python-httplib2 python-jinja2
+  python-markupsafe python-yaml
+Suggested packages:
+  ansible-doc sshpass python-crypto-dbg python-crypto-doc python-jinja2-doc
+The following NEW packages will be installed:
+  ansible libgmp10 libyaml-0-2 python-crypto python-httplib2 python-jinja2
+  python-markupsafe python-yaml
+0 upgraded, 8 newly installed, 0 to remove and 225 not upgraded.
+Need to get 1236 kB of archives.
+After this operation, 6600 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty/main libgmp10 amd64 2:5.1.3+dfsg-1ubuntu1 [218 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libyaml-0-2 amd64 0.1.4-3ubuntu3.1 [48.1 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ trusty/main python-crypto amd64 2.6.1-4build1 [239 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main python-yaml amd64 3.10-4ubuntu0.1 [102 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu/ trusty/main python-markupsafe amd64 0.18-1build2 [14.3 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu/ trusty/main python-jinja2 all 2.7.2-2 [161 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu/ trusty/main python-httplib2 all 0.8-2build1 [35.4 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu/ trusty/universe ansible all 1.5.4+dfsg-1 [418 kB]
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 1236 kB in 2s (558 kB/s)
+Selecting previously unselected package libgmp10:amd64.
+(Reading database ... 55692 files and directories currently installed.)
+Preparing to unpack .../libgmp10_2%3a5.1.3+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgmp10:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Selecting previously unselected package libyaml-0-2:amd64.
+Preparing to unpack .../libyaml-0-2_0.1.4-3ubuntu3.1_amd64.deb ...
+Unpacking libyaml-0-2:amd64 (0.1.4-3ubuntu3.1) ...
+Selecting previously unselected package python-crypto.
+Preparing to unpack .../python-crypto_2.6.1-4build1_amd64.deb ...
+Unpacking python-crypto (2.6.1-4build1) ...
+Selecting previously unselected package python-yaml.
+Preparing to unpack .../python-yaml_3.10-4ubuntu0.1_amd64.deb ...
+Unpacking python-yaml (3.10-4ubuntu0.1) ...
+Selecting previously unselected package python-markupsafe.
+Preparing to unpack .../python-markupsafe_0.18-1build2_amd64.deb ...
+Unpacking python-markupsafe (0.18-1build2) ...
+Selecting previously unselected package python-jinja2.
+Preparing to unpack .../python-jinja2_2.7.2-2_all.deb ...
+Unpacking python-jinja2 (2.7.2-2) ...
+Selecting previously unselected package python-httplib2.
+Preparing to unpack .../python-httplib2_0.8-2build1_all.deb ...
+Unpacking python-httplib2 (0.8-2build1) ...
+Selecting previously unselected package ansible.
+Preparing to unpack .../ansible_1.5.4+dfsg-1_all.deb ...
+Unpacking ansible (1.5.4+dfsg-1) ...
+Processing triggers for man-db (2.6.7.1-1) ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Setting up libgmp10:amd64 (2:5.1.3+dfsg-1ubuntu1) ...
+Setting up libyaml-0-2:amd64 (0.1.4-3ubuntu3.1) ...
+Setting up python-crypto (2.6.1-4build1) ...
+Setting up python-yaml (3.10-4ubuntu0.1) ...
+Setting up python-markupsafe (0.18-1build2) ...
+Setting up python-jinja2 (2.7.2-2) ...
+Setting up python-httplib2 (0.8-2build1) ...
+Setting up ansible (1.5.4+dfsg-1) ...
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-bzr git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 225 not upgraded.
+Need to get 3306 kB of archives.
+After this operation, 21.9 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty/main liberror-perl all 0.17-1.1 [21.1 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main git-man all 1:1.9.1-1ubuntu0.3 [699 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main git amd64 1:1.9.1-1ubuntu0.3 [2586 kB]
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 3306 kB in 3s (933 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 56319 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17-1.1_all.deb ...
+Unpacking liberror-perl (0.17-1.1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a1.9.1-1ubuntu0.3_all.deb ...
+Unpacking git-man (1:1.9.1-1ubuntu0.3) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a1.9.1-1ubuntu0.3_amd64.deb ...
+Unpacking git (1:1.9.1-1ubuntu0.3) ...
+Processing triggers for man-db (2.6.7.1-1) ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Setting up liberror-perl (0.17-1.1) ...
+Setting up git-man (1:1.9.1-1ubuntu0.3) ...
+Setting up git (1:1.9.1-1ubuntu0.3) ...
+Cloning into 'vaizrdemodeploymentadduservaizrdemo'...
+
+PLAY [update distribution's] ************************************************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemodeploymentadduservaizrdemo | Create directories for username] *** 
+ok: [127.0.0.1] => (item=/home/ubuntu/workspaces)
+
+TASK: [git_clone_pull_vaizrdemodeploymentadduservaizrdemo | Checkout vaizrdemodeploymentadduservaizrdemo files from gitlab] *** 
+ok: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemodeploymentadduservaizrdemo | change owner vaizrdemodeploymentadduservaizrdemo] *** 
+changed: [127.0.0.1]
+
+TASK: [adduser_vaizrdemo | adduser vaizrdemo] ********************************* 
+changed: [127.0.0.1]
+
+TASK: [adduser_vaizrdemo | Set password for vaizrdemo user] ******************* 
+changed: [127.0.0.1]
+
+TASK: [adduser_vaizrdemo | Add vaizrdemo to sudo] ***************************** 
+changed: [127.0.0.1]
+
+PLAY RECAP ******************************************************************** 
+127.0.0.1                  : ok=7    changed=4    unreachable=0    failed=0   
+
+
+PLAY [update distribution's] ************************************************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [127.0.0.1]
+
+TASK: [add_authorizedkeys | change owner .ssh to vaizrdemo] ******************* 
+changed: [127.0.0.1]
+
+TASK: [add_authorizedkeys | Set X-windows public key on vaizrdemo] ************ 
+changed: [127.0.0.1]
+
+PLAY RECAP ******************************************************************** 
+127.0.0.1                  : ok=3    changed=2    unreachable=0    failed=0   
+
+********** logon with vaizrdemo user **********
+Tue Feb 7 13:52:49 CET 2017
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Warning: Permanently added '[127.0.0.1]:2222' (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 14.04 LTS (GNU/Linux 3.13.0-24-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Tue Feb  7 13:51:43 CET 2017
+
+  System load:  0.0               Processes:           76
+  Usage of /:   6.3% of 17.10GB   Users logged in:     0
+  Memory usage: 1%                IP address for eth0: 10.0.2.15
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+0 packages can be updated.
+0 updates are security updates.
+
+New release '16.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+Get:1 http://security.ubuntu.com trusty-security InRelease [65.9 kB]
+Get:2 http://security.ubuntu.com trusty-security/main Sources [124 kB]
+Ign http://us.archive.ubuntu.com trusty InRelease
+Get:3 http://security.ubuntu.com trusty-security/restricted Sources [4637 B]
+Get:4 http://security.ubuntu.com trusty-security/universe Sources [49.3 kB]
+Hit http://us.archive.ubuntu.com trusty-updates InRelease
+Get:5 http://security.ubuntu.com trusty-security/multiverse Sources [3208 B]
+Get:6 http://security.ubuntu.com trusty-security/main amd64 Packages [578 kB]
+Hit http://us.archive.ubuntu.com trusty-backports InRelease
+Hit http://us.archive.ubuntu.com trusty Release.gpg
+Hit http://us.archive.ubuntu.com trusty-updates/main Sources
+Hit http://us.archive.ubuntu.com trusty-updates/restricted Sources
+Get:7 http://security.ubuntu.com trusty-security/restricted amd64 Packages [13.4 kB]
+Get:8 http://security.ubuntu.com trusty-security/universe amd64 Packages [151 kB]
+Hit http://us.archive.ubuntu.com trusty-updates/universe Sources
+Get:9 http://security.ubuntu.com trusty-security/multiverse amd64 Packages [4136 B]
+Get:10 http://security.ubuntu.com trusty-security/main i386 Packages [539 kB]
+Hit http://us.archive.ubuntu.com trusty-updates/multiverse Sources
+Hit http://us.archive.ubuntu.com trusty-updates/main amd64 Packages
+Hit http://us.archive.ubuntu.com trusty-updates/restricted amd64 Packages
+Hit http://us.archive.ubuntu.com trusty-updates/universe amd64 Packages
+Get:11 http://security.ubuntu.com trusty-security/restricted i386 Packages [13.1 kB]
+Get:12 http://security.ubuntu.com trusty-security/universe i386 Packages [151 kB]
+Hit http://us.archive.ubuntu.com trusty-updates/multiverse amd64 Packages
+Get:13 http://security.ubuntu.com trusty-security/multiverse i386 Packages [4284 B]
+Hit http://security.ubuntu.com trusty-security/main Translation-en
+Hit http://security.ubuntu.com trusty-security/multiverse Translation-en
+Hit http://us.archive.ubuntu.com trusty-updates/main i386 Packages
+Hit http://security.ubuntu.com trusty-security/restricted Translation-en
+Hit http://security.ubuntu.com trusty-security/universe Translation-en
+Hit http://us.archive.ubuntu.com trusty-updates/restricted i386 Packages
+Hit http://us.archive.ubuntu.com trusty-updates/universe i386 Packages
+Hit http://us.archive.ubuntu.com trusty-updates/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com trusty-updates/main Translation-en
+Hit http://us.archive.ubuntu.com trusty-updates/multiverse Translation-en
+Hit http://us.archive.ubuntu.com trusty-updates/restricted Translation-en
+Hit http://us.archive.ubuntu.com trusty-updates/universe Translation-en
+Hit http://us.archive.ubuntu.com trusty-backports/main Sources
+Hit http://us.archive.ubuntu.com trusty-backports/restricted Sources
+Hit http://us.archive.ubuntu.com trusty-backports/universe Sources
+Hit http://us.archive.ubuntu.com trusty-backports/multiverse Sources
+Hit http://us.archive.ubuntu.com trusty-backports/main amd64 Packages
+Hit http://us.archive.ubuntu.com trusty-backports/restricted amd64 Packages
+Hit http://us.archive.ubuntu.com trusty-backports/universe amd64 Packages
+Hit http://us.archive.ubuntu.com trusty-backports/multiverse amd64 Packages
+Hit http://us.archive.ubuntu.com trusty-backports/main i386 Packages
+Hit http://us.archive.ubuntu.com trusty-backports/restricted i386 Packages
+Hit http://us.archive.ubuntu.com trusty-backports/universe i386 Packages
+Hit http://us.archive.ubuntu.com trusty-backports/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com trusty-backports/main Translation-en
+Hit http://us.archive.ubuntu.com trusty-backports/multiverse Translation-en
+Hit http://us.archive.ubuntu.com trusty-backports/restricted Translation-en
+Hit http://us.archive.ubuntu.com trusty-backports/universe Translation-en
+Hit http://us.archive.ubuntu.com trusty Release
+Hit http://us.archive.ubuntu.com trusty/main Sources
+Hit http://us.archive.ubuntu.com trusty/restricted Sources
+Hit http://us.archive.ubuntu.com trusty/universe Sources
+Hit http://us.archive.ubuntu.com trusty/multiverse Sources
+Hit http://us.archive.ubuntu.com trusty/main amd64 Packages
+Hit http://us.archive.ubuntu.com trusty/restricted amd64 Packages
+Hit http://us.archive.ubuntu.com trusty/universe amd64 Packages
+Hit http://us.archive.ubuntu.com trusty/multiverse amd64 Packages
+Hit http://us.archive.ubuntu.com trusty/main i386 Packages
+Hit http://us.archive.ubuntu.com trusty/restricted i386 Packages
+Hit http://us.archive.ubuntu.com trusty/universe i386 Packages
+Hit http://us.archive.ubuntu.com trusty/multiverse i386 Packages
+Hit http://us.archive.ubuntu.com trusty/main Translation-en
+Hit http://us.archive.ubuntu.com trusty/multiverse Translation-en
+Hit http://us.archive.ubuntu.com trusty/restricted Translation-en
+Hit http://us.archive.ubuntu.com trusty/universe Translation-en
+Fetched 1702 kB in 5s (316 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ansible is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 225 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 225 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following extra packages will be installed:
+  fontconfig-config fonts-dejavu-core libdrm-intel1 libdrm-nouveau2
+  libdrm-radeon1 libfontconfig1 libfontenc1 libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libice6 libllvm3.4 libpciaccess0 libsm6 libtcl8.6 libtk8.6
+  libtxc-dxtn-s2tc0 libutempter0 libx11-xcb1 libxaw7 libxcb-dri2-0
+  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-shape0 libxcb-sync1
+  libxcomposite1 libxdamage1 libxfixes3 libxft2 libxi6 libxinerama1 libxmu6
+  libxpm4 libxrandr2 libxrender1 libxshmfence1 libxss1 libxt6 libxtst6 libxv1
+  libxxf86dga1 libxxf86vm1 mercurial-common tcl tcl8.6 tk tk8.6 x11-common
+  x11-utils xbitmaps xterm
+Suggested packages:
+  libglide3 qct kdiff3 kdiff3-qt kompare meld tkcvs mgdiff python-mysqldb
+  python-pygments tcl-tclreadline mesa-utils xfonts-cyrillic
+Recommended packages:
+  wish
+The following NEW packages will be installed:
+  fontconfig-config fonts-dejavu-core libdrm-intel1 libdrm-nouveau2
+  libdrm-radeon1 libfontconfig1 libfontenc1 libgl1-mesa-dri libgl1-mesa-glx
+  libglapi-mesa libice6 libllvm3.4 libpciaccess0 libsm6 libtcl8.6 libtk8.6
+  libtxc-dxtn-s2tc0 libutempter0 libx11-xcb1 libxaw7 libxcb-dri2-0
+  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-shape0 libxcb-sync1
+  libxcomposite1 libxdamage1 libxfixes3 libxft2 libxi6 libxinerama1 libxmu6
+  libxpm4 libxrandr2 libxrender1 libxshmfence1 libxss1 libxt6 libxtst6 libxv1
+  libxxf86dga1 libxxf86vm1 mercurial mercurial-common tcl tcl8.6 tk tk8.6
+  x11-common x11-utils xbitmaps xterm
+0 upgraded, 53 newly installed, 0 to remove and 225 not upgraded.
+Need to get 17.7 MB of archives.
+After this operation, 86.5 MB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty/main libpciaccess0 amd64 0.13.2-1 [20.4 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libdrm-intel1 amd64 2.4.67-1ubuntu0.14.04.1 [55.3 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libdrm-nouveau2 amd64 2.4.67-1ubuntu0.14.04.1 [15.9 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libdrm-radeon1 amd64 2.4.67-1ubuntu0.14.04.1 [21.2 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu/ trusty/main fonts-dejavu-core all 2.34-1ubuntu1 [1024 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main fontconfig-config all 2.11.0-0ubuntu4.2 [47.4 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libfontconfig1 amd64 2.11.0-0ubuntu4.2 [123 kB]
+Get:8 http://us.archive.ubuntu.com/ubuntu/ trusty/main libfontenc1 amd64 1:1.1.2-1 [15.6 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu/ trusty/main libllvm3.4 amd64 1:3.4-1ubuntu3 [6540 kB]
+Get:10 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libgl1-mesa-dri amd64 10.1.3-0ubuntu0.6 [4823 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libglapi-mesa amd64 10.1.3-0ubuntu0.6 [21.0 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu/ trusty/main libx11-xcb1 amd64 2:1.6.2-1ubuntu2 [9426 B]
+Get:13 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxcb-dri2-0 amd64 1.10-2ubuntu1 [6710 B]
+Get:14 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxcb-dri3-0 amd64 1.10-2ubuntu1 [5118 B]
+Get:15 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxcb-glx0 amd64 1.10-2ubuntu1 [20.0 kB]
+Get:16 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxcb-present0 amd64 1.10-2ubuntu1 [5254 B]
+Get:17 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxcb-sync1 amd64 1.10-2ubuntu1 [8090 B]
+Get:18 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxdamage1 amd64 1:1.1.4-1ubuntu1 [7612 B]
+Get:19 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libxfixes3 amd64 1:5.0.1-1ubuntu1.1 [10.4 kB]
+Get:20 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxshmfence1 amd64 1.1-2 [4644 B]
+Get:21 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxxf86vm1 amd64 1:1.1.3-1 [11.7 kB]
+Get:22 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libgl1-mesa-glx amd64 10.1.3-0ubuntu0.6 [113 kB]
+Get:23 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main x11-common all 1:7.7+1ubuntu8.1 [49.5 kB]
+Get:24 http://us.archive.ubuntu.com/ubuntu/ trusty/main libice6 amd64 2:1.0.8-2 [47.0 kB]
+Get:25 http://us.archive.ubuntu.com/ubuntu/ trusty/main libsm6 amd64 2:1.2.1-2 [18.1 kB]
+Get:26 http://us.archive.ubuntu.com/ubuntu/ trusty/main libtcl8.6 amd64 8.6.1-4ubuntu1 [841 kB]
+Get:27 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libxrender1 amd64 1:0.9.8-1build0.14.04.1 [17.9 kB]
+Get:28 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxft2 amd64 2.3.1-2 [36.2 kB]
+Get:29 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxss1 amd64 1:1.2.2-1 [8582 B]
+Get:30 http://us.archive.ubuntu.com/ubuntu/ trusty/main libtk8.6 amd64 8.6.1-3ubuntu2 [689 kB]
+Get:31 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxt6 amd64 1:1.1.4-1 [185 kB]
+Get:32 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxmu6 amd64 2:1.1.1-1 [53.8 kB]
+Get:33 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libxpm4 amd64 1:3.5.10-1ubuntu0.1 [33.2 kB]
+Get:34 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxaw7 amd64 2:1.0.12-1 [168 kB]
+Get:35 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxcb-shape0 amd64 1.10-2ubuntu1 [5654 B]
+Get:36 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxcomposite1 amd64 1:0.4.4-1 [7714 B]
+Get:37 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libxi6 amd64 2:1.7.1.901-1ubuntu1.1 [27.9 kB]
+Get:38 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxinerama1 amd64 2:1.1.3-1 [7908 B]
+Get:39 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libxrandr2 amd64 2:1.5.0-1~trusty1 [17.5 kB]
+Get:40 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxtst6 amd64 2:1.2.2-1 [14.1 kB]
+Get:41 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxv1 amd64 2:1.0.10-1 [10.3 kB]
+Get:42 http://us.archive.ubuntu.com/ubuntu/ trusty/main libxxf86dga1 amd64 2:1.1.4-1 [13.7 kB]
+Get:43 http://us.archive.ubuntu.com/ubuntu/ trusty/main libtxc-dxtn-s2tc0 amd64 0~git20131104-1.1 [51.8 kB]
+Get:44 http://us.archive.ubuntu.com/ubuntu/ trusty/main libutempter0 amd64 1.1.5-4build1 [8366 B]
+Get:45 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/universe mercurial-common all 2.8.2-1ubuntu1.3 [1520 kB]
+Get:46 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/universe mercurial amd64 2.8.2-1ubuntu1.3 [41.1 kB]
+Get:47 http://us.archive.ubuntu.com/ubuntu/ trusty/main tcl8.6 amd64 8.6.1-4ubuntu1 [14.2 kB]
+Get:48 http://us.archive.ubuntu.com/ubuntu/ trusty/main tcl amd64 8.6.0+6ubuntu3 [4900 B]
+Get:49 http://us.archive.ubuntu.com/ubuntu/ trusty/main tk8.6 amd64 8.6.1-3ubuntu2 [12.1 kB]
+Get:50 http://us.archive.ubuntu.com/ubuntu/ trusty/main tk amd64 8.6.0+6ubuntu3 [3192 B]
+Get:51 http://us.archive.ubuntu.com/ubuntu/ trusty/main x11-utils amd64 7.7+1 [230 kB]
+Get:52 http://us.archive.ubuntu.com/ubuntu/ trusty/main xbitmaps all 1.1.1-2 [28.1 kB]
+Get:53 http://us.archive.ubuntu.com/ubuntu/ trusty/main xterm amd64 297-1ubuntu1 [665 kB]
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 17.7 MB in 24s (722 kB/s)
+Selecting previously unselected package libpciaccess0:amd64.
+(Reading database ... 57067 files and directories currently installed.)
+Preparing to unpack .../libpciaccess0_0.13.2-1_amd64.deb ...
+Unpacking libpciaccess0:amd64 (0.13.2-1) ...
+Selecting previously unselected package libdrm-intel1:amd64.
+Preparing to unpack .../libdrm-intel1_2.4.67-1ubuntu0.14.04.1_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.67-1ubuntu0.14.04.1) ...
+Selecting previously unselected package libdrm-nouveau2:amd64.
+Preparing to unpack .../libdrm-nouveau2_2.4.67-1ubuntu0.14.04.1_amd64.deb ...
+Unpacking libdrm-nouveau2:amd64 (2.4.67-1ubuntu0.14.04.1) ...
+Selecting previously unselected package libdrm-radeon1:amd64.
+Preparing to unpack .../libdrm-radeon1_2.4.67-1ubuntu0.14.04.1_amd64.deb ...
+Unpacking libdrm-radeon1:amd64 (2.4.67-1ubuntu0.14.04.1) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../fonts-dejavu-core_2.34-1ubuntu1_all.deb ...
+Unpacking fonts-dejavu-core (2.34-1ubuntu1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../fontconfig-config_2.11.0-0ubuntu4.2_all.deb ...
+Unpacking fontconfig-config (2.11.0-0ubuntu4.2) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../libfontconfig1_2.11.0-0ubuntu4.2_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.11.0-0ubuntu4.2) ...
+Selecting previously unselected package libfontenc1:amd64.
+Preparing to unpack .../libfontenc1_1%3a1.1.2-1_amd64.deb ...
+Unpacking libfontenc1:amd64 (1:1.1.2-1) ...
+Selecting previously unselected package libllvm3.4:amd64.
+Preparing to unpack .../libllvm3.4_1%3a3.4-1ubuntu3_amd64.deb ...
+Unpacking libllvm3.4:amd64 (1:3.4-1ubuntu3) ...
+Selecting previously unselected package libgl1-mesa-dri:amd64.
+Preparing to unpack .../libgl1-mesa-dri_10.1.3-0ubuntu0.6_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (10.1.3-0ubuntu0.6) ...
+Selecting previously unselected package libglapi-mesa:amd64.
+Preparing to unpack .../libglapi-mesa_10.1.3-0ubuntu0.6_amd64.deb ...
+Unpacking libglapi-mesa:amd64 (10.1.3-0ubuntu0.6) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../libx11-xcb1_2%3a1.6.2-1ubuntu2_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.6.2-1ubuntu2) ...
+Selecting previously unselected package libxcb-dri2-0:amd64.
+Preparing to unpack .../libxcb-dri2-0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-dri2-0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-dri3-0:amd64.
+Preparing to unpack .../libxcb-dri3-0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-dri3-0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-glx0:amd64.
+Preparing to unpack .../libxcb-glx0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-glx0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-present0:amd64.
+Preparing to unpack .../libxcb-present0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-present0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcb-sync1:amd64.
+Preparing to unpack .../libxcb-sync1_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-sync1:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxdamage1:amd64.
+Preparing to unpack .../libxdamage1_1%3a1.1.4-1ubuntu1_amd64.deb ...
+Unpacking libxdamage1:amd64 (1:1.1.4-1ubuntu1) ...
+Selecting previously unselected package libxfixes3:amd64.
+Preparing to unpack .../libxfixes3_1%3a5.0.1-1ubuntu1.1_amd64.deb ...
+Unpacking libxfixes3:amd64 (1:5.0.1-1ubuntu1.1) ...
+Selecting previously unselected package libxshmfence1:amd64.
+Preparing to unpack .../libxshmfence1_1.1-2_amd64.deb ...
+Unpacking libxshmfence1:amd64 (1.1-2) ...
+Selecting previously unselected package libxxf86vm1:amd64.
+Preparing to unpack .../libxxf86vm1_1%3a1.1.3-1_amd64.deb ...
+Unpacking libxxf86vm1:amd64 (1:1.1.3-1) ...
+Selecting previously unselected package libgl1-mesa-glx:amd64.
+Preparing to unpack .../libgl1-mesa-glx_10.1.3-0ubuntu0.6_amd64.deb ...
+Unpacking libgl1-mesa-glx:amd64 (10.1.3-0ubuntu0.6) ...
+Selecting previously unselected package x11-common.
+Preparing to unpack .../x11-common_1%3a7.7+1ubuntu8.1_all.deb ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Unpacking x11-common (1:7.7+1ubuntu8.1) ...
+Selecting previously unselected package libice6:amd64.
+Preparing to unpack .../libice6_2%3a1.0.8-2_amd64.deb ...
+Unpacking libice6:amd64 (2:1.0.8-2) ...
+Selecting previously unselected package libsm6:amd64.
+Preparing to unpack .../libsm6_2%3a1.2.1-2_amd64.deb ...
+Unpacking libsm6:amd64 (2:1.2.1-2) ...
+Selecting previously unselected package libtcl8.6:amd64.
+Preparing to unpack .../libtcl8.6_8.6.1-4ubuntu1_amd64.deb ...
+Unpacking libtcl8.6:amd64 (8.6.1-4ubuntu1) ...
+Selecting previously unselected package libxrender1:amd64.
+Preparing to unpack .../libxrender1_1%3a0.9.8-1build0.14.04.1_amd64.deb ...
+Unpacking libxrender1:amd64 (1:0.9.8-1build0.14.04.1) ...
+Selecting previously unselected package libxft2:amd64.
+Preparing to unpack .../libxft2_2.3.1-2_amd64.deb ...
+Unpacking libxft2:amd64 (2.3.1-2) ...
+Selecting previously unselected package libxss1:amd64.
+Preparing to unpack .../libxss1_1%3a1.2.2-1_amd64.deb ...
+Unpacking libxss1:amd64 (1:1.2.2-1) ...
+Selecting previously unselected package libtk8.6:amd64.
+Preparing to unpack .../libtk8.6_8.6.1-3ubuntu2_amd64.deb ...
+Unpacking libtk8.6:amd64 (8.6.1-3ubuntu2) ...
+Selecting previously unselected package libxt6:amd64.
+Preparing to unpack .../libxt6_1%3a1.1.4-1_amd64.deb ...
+Unpacking libxt6:amd64 (1:1.1.4-1) ...
+Selecting previously unselected package libxmu6:amd64.
+Preparing to unpack .../libxmu6_2%3a1.1.1-1_amd64.deb ...
+Unpacking libxmu6:amd64 (2:1.1.1-1) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../libxpm4_1%3a3.5.10-1ubuntu0.1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.10-1ubuntu0.1) ...
+Selecting previously unselected package libxaw7:amd64.
+Preparing to unpack .../libxaw7_2%3a1.0.12-1_amd64.deb ...
+Unpacking libxaw7:amd64 (2:1.0.12-1) ...
+Selecting previously unselected package libxcb-shape0:amd64.
+Preparing to unpack .../libxcb-shape0_1.10-2ubuntu1_amd64.deb ...
+Unpacking libxcb-shape0:amd64 (1.10-2ubuntu1) ...
+Selecting previously unselected package libxcomposite1:amd64.
+Preparing to unpack .../libxcomposite1_1%3a0.4.4-1_amd64.deb ...
+Unpacking libxcomposite1:amd64 (1:0.4.4-1) ...
+Selecting previously unselected package libxi6:amd64.
+Preparing to unpack .../libxi6_2%3a1.7.1.901-1ubuntu1.1_amd64.deb ...
+Unpacking libxi6:amd64 (2:1.7.1.901-1ubuntu1.1) ...
+Selecting previously unselected package libxinerama1:amd64.
+Preparing to unpack .../libxinerama1_2%3a1.1.3-1_amd64.deb ...
+Unpacking libxinerama1:amd64 (2:1.1.3-1) ...
+Selecting previously unselected package libxrandr2:amd64.
+Preparing to unpack .../libxrandr2_2%3a1.5.0-1~trusty1_amd64.deb ...
+Unpacking libxrandr2:amd64 (2:1.5.0-1~trusty1) ...
+Selecting previously unselected package libxtst6:amd64.
+Preparing to unpack .../libxtst6_2%3a1.2.2-1_amd64.deb ...
+Unpacking libxtst6:amd64 (2:1.2.2-1) ...
+Selecting previously unselected package libxv1:amd64.
+Preparing to unpack .../libxv1_2%3a1.0.10-1_amd64.deb ...
+Unpacking libxv1:amd64 (2:1.0.10-1) ...
+Selecting previously unselected package libxxf86dga1:amd64.
+Preparing to unpack .../libxxf86dga1_2%3a1.1.4-1_amd64.deb ...
+Unpacking libxxf86dga1:amd64 (2:1.1.4-1) ...
+Selecting previously unselected package libtxc-dxtn-s2tc0:amd64.
+Preparing to unpack .../libtxc-dxtn-s2tc0_0~git20131104-1.1_amd64.deb ...
+Unpacking libtxc-dxtn-s2tc0:amd64 (0~git20131104-1.1) ...
+Selecting previously unselected package libutempter0.
+Preparing to unpack .../libutempter0_1.1.5-4build1_amd64.deb ...
+Unpacking libutempter0 (1.1.5-4build1) ...
+Selecting previously unselected package mercurial-common.
+Preparing to unpack .../mercurial-common_2.8.2-1ubuntu1.3_all.deb ...
+Unpacking mercurial-common (2.8.2-1ubuntu1.3) ...
+Selecting previously unselected package mercurial.
+Preparing to unpack .../mercurial_2.8.2-1ubuntu1.3_amd64.deb ...
+Unpacking mercurial (2.8.2-1ubuntu1.3) ...
+Selecting previously unselected package tcl8.6.
+Preparing to unpack .../tcl8.6_8.6.1-4ubuntu1_amd64.deb ...
+Unpacking tcl8.6 (8.6.1-4ubuntu1) ...
+Selecting previously unselected package tcl.
+Preparing to unpack .../tcl_8.6.0+6ubuntu3_amd64.deb ...
+Unpacking tcl (8.6.0+6ubuntu3) ...
+Selecting previously unselected package tk8.6.
+Preparing to unpack .../tk8.6_8.6.1-3ubuntu2_amd64.deb ...
+Unpacking tk8.6 (8.6.1-3ubuntu2) ...
+Selecting previously unselected package tk.
+Preparing to unpack .../tk_8.6.0+6ubuntu3_amd64.deb ...
+Unpacking tk (8.6.0+6ubuntu3) ...
+Selecting previously unselected package x11-utils.
+Preparing to unpack .../x11-utils_7.7+1_amd64.deb ...
+Unpacking x11-utils (7.7+1) ...
+Selecting previously unselected package xbitmaps.
+Preparing to unpack .../xbitmaps_1.1.1-2_all.deb ...
+Unpacking xbitmaps (1.1.1-2) ...
+Selecting previously unselected package xterm.
+Preparing to unpack .../xterm_297-1ubuntu1_amd64.deb ...
+Unpacking xterm (297-1ubuntu1) ...
+Processing triggers for man-db (2.6.7.1-1) ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+Processing triggers for ureadahead (0.100.0-16) ...
+ureadahead will be reprofiled on next reboot
+Processing triggers for mime-support (3.54ubuntu1) ...
+Setting up libpciaccess0:amd64 (0.13.2-1) ...
+Setting up libdrm-intel1:amd64 (2.4.67-1ubuntu0.14.04.1) ...
+Setting up libdrm-nouveau2:amd64 (2.4.67-1ubuntu0.14.04.1) ...
+Setting up libdrm-radeon1:amd64 (2.4.67-1ubuntu0.14.04.1) ...
+Setting up fonts-dejavu-core (2.34-1ubuntu1) ...
+Setting up fontconfig-config (2.11.0-0ubuntu4.2) ...
+Setting up libfontconfig1:amd64 (2.11.0-0ubuntu4.2) ...
+Setting up libfontenc1:amd64 (1:1.1.2-1) ...
+Setting up libllvm3.4:amd64 (1:3.4-1ubuntu3) ...
+Setting up libgl1-mesa-dri:amd64 (10.1.3-0ubuntu0.6) ...
+Setting up libglapi-mesa:amd64 (10.1.3-0ubuntu0.6) ...
+Setting up libx11-xcb1:amd64 (2:1.6.2-1ubuntu2) ...
+Setting up libxcb-dri2-0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-dri3-0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-glx0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-present0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcb-sync1:amd64 (1.10-2ubuntu1) ...
+Setting up libxdamage1:amd64 (1:1.1.4-1ubuntu1) ...
+Setting up libxfixes3:amd64 (1:5.0.1-1ubuntu1.1) ...
+Setting up libxshmfence1:amd64 (1.1-2) ...
+Setting up libxxf86vm1:amd64 (1:1.1.3-1) ...
+Setting up libgl1-mesa-glx:amd64 (10.1.3-0ubuntu0.6) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/mesa/ld.so.conf to provide /etc/ld.so.conf.d/x86_64-linux-gnu_GL.conf (x86_64-linux-gnu_gl_conf) in auto mode
+Setting up x11-common (1:7.7+1ubuntu8.1) ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+ * Setting up X socket directories...
+   ...done.
+Setting up libtcl8.6:amd64 (8.6.1-4ubuntu1) ...
+Setting up libxrender1:amd64 (1:0.9.8-1build0.14.04.1) ...
+Setting up libxft2:amd64 (2.3.1-2) ...
+Setting up libxpm4:amd64 (1:3.5.10-1ubuntu0.1) ...
+Setting up libxcb-shape0:amd64 (1.10-2ubuntu1) ...
+Setting up libxcomposite1:amd64 (1:0.4.4-1) ...
+Setting up libxi6:amd64 (2:1.7.1.901-1ubuntu1.1) ...
+Setting up libxinerama1:amd64 (2:1.1.3-1) ...
+Setting up libxrandr2:amd64 (2:1.5.0-1~trusty1) ...
+Setting up libxv1:amd64 (2:1.0.10-1) ...
+Setting up libxxf86dga1:amd64 (2:1.1.4-1) ...
+Setting up libtxc-dxtn-s2tc0:amd64 (0~git20131104-1.1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/libtxc_dxtn_s2tc.so.0 to provide /usr/lib/x86_64-linux-gnu/libtxc_dxtn.so (libtxc-dxtn-x86_64-linux-gnu) in auto mode
+Setting up libutempter0 (1.1.5-4build1) ...
+Creating utempter group...
+Setting up mercurial-common (2.8.2-1ubuntu1.3) ...
+Setting up mercurial (2.8.2-1ubuntu1.3) ...
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+
+Creating config file /etc/mercurial/hgrc.d/hgext.rc with new version
+Setting up tcl8.6 (8.6.1-4ubuntu1) ...
+Setting up tcl (8.6.0+6ubuntu3) ...
+Setting up xbitmaps (1.1.1-2) ...
+Processing triggers for ureadahead (0.100.0-16) ...
+Setting up libxss1:amd64 (1:1.2.2-1) ...
+Setting up libtk8.6:amd64 (8.6.1-3ubuntu2) ...
+Setting up libxtst6:amd64 (2:1.2.2-1) ...
+Setting up tk8.6 (8.6.1-3ubuntu2) ...
+Setting up tk (8.6.0+6ubuntu3) ...
+Setting up libice6:amd64 (2:1.0.8-2) ...
+Setting up libsm6:amd64 (2:1.2.1-2) ...
+Setting up libxt6:amd64 (1:1.1.4-1) ...
+Setting up libxmu6:amd64 (2:1.1.1-1) ...
+Setting up libxaw7:amd64 (2:1.0.12-1) ...
+Setting up x11-utils (7.7+1) ...
+Setting up xterm (297-1ubuntu1) ...
+update-alternatives: using /usr/bin/xterm to provide /usr/bin/x-terminal-emulator (x-terminal-emulator) in auto mode
+update-alternatives: using /usr/bin/lxterm to provide /usr/bin/x-terminal-emulator (x-terminal-emulator) in auto mode
+Processing triggers for libc-bin (2.19-0ubuntu6) ...
+Cloning into 'vaizrdemodeployment'...
+rm: cannot remove '/home/vaizrdemo/workspaces/vaizrdemodeployment/ansible/ubuntu': No such file or directory
+rm: cannot remove '/home/vaizrdemo/workspaces/vaizrdemodeployment/ansible/vagrant': No such file or directory
+ [DEPRECATION WARNING]: Legacy variable substitution, such as using ${foo} or
+$foo instead of {{ foo }} is currently valid but will be phased out and has
+been out of favor since version 1.2. This is the last of legacy features on our
+deprecation list. You may continue to use this if you have specific needs for
+now. This feature will be removed in version 1.6. Deprecation warnings can be
+disabled by setting deprecation_warnings=False in ansible.cfg.
+
+
+PLAY [update distribution's] ************************************************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemodeployment | Create directories for username] *** 
+ok: [127.0.0.1] => (item=/home/vaizrdemo/workspaces)
+
+TASK: [git_clone_pull_vaizrdemodeployment | Checkout vaizrdemodeployment files from gitlab] *** 
+changed: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemodeployment | change owner vaizrdemodeployment] *** 
+changed: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemodeployment | change owner vaizrdemodeployment] *** 
+changed: [127.0.0.1]
+
+TASK: [common | Install packages] ********************************************* 
+changed: [127.0.0.1] => (item=tree,sysstat)
+
+TASK: [db_postgresql | Install database] ************************************** 
+changed: [127.0.0.1] => (item=postgresql-9.3-postgis-2.1,python-psycopg2,pgadmin3)
+
+TASK: [db_postgresql | Edit lines in /etc/postgresql/9.3/main/pg_hba.conf] **** 
+changed: [127.0.0.1]
+
+TASK: [db_postgresql | Edit lines in /etc/postgresql/9.3/main/pg_hba.conf] **** 
+changed: [127.0.0.1]
+
+TASK: [db_postgresql | Restart postgresql service] **************************** 
+changed: [127.0.0.1]
+
+TASK: [java | ensure required packages are installed for Java 7] ************** 
+changed: [127.0.0.1] => (item=python-software-properties,software-properties-common)
+
+TASK: [java | Add Java repository to sources] ********************************* 
+changed: [127.0.0.1]
+
+TASK: [java | Autoaccept license for Java] ************************************ 
+changed: [127.0.0.1]
+
+TASK: [java | Update APT package cache] *************************************** 
+ok: [127.0.0.1]
+
+TASK: [java | Install Java 8] ************************************************* 
+changed: [127.0.0.1]
+
+TASK: [java | Set Java 8 Env] ************************************************* 
+ok: [127.0.0.1]
+
+TASK: [appserver | Install packages] ****************************************** 
+changed: [127.0.0.1] => (item=apache2,tomcat7)
+
+TASK: [appserver | Copy default config] *************************************** 
+changed: [127.0.0.1]
+
+TASK: [appserver | Copy index.html] ******************************************* 
+changed: [127.0.0.1]
+
+TASK: [appserver | enable apache proxy] *************************************** 
+changed: [127.0.0.1]
+
+TASK: [appserver | enable apache proxy_hhtp] ********************************** 
+changed: [127.0.0.1]
+
+TASK: [appserver | restart apache] ******************************************** 
+ok: [127.0.0.1]
+
+TASK: [appserver | Add one line to /etc/apache2/apache2.conf] ***************** 
+changed: [127.0.0.1]
+
+TASK: [appserver | Edit lines in /etc/default/tomcat7] ************************ 
+changed: [127.0.0.1]
+
+TASK: [install_vaizrdemo_on_tomcat | psql install vaizrdemo] ****************** 
+changed: [127.0.0.1]
+
+TASK: [install_vaizrdemo_on_tomcat | file path=/home/{{username}}/bin state=directory mode=0755] *** 
+changed: [127.0.0.1]
+
+TASK: [install_vaizrdemo_on_tomcat | create installvaizrdemo.sh file] ********* 
+changed: [127.0.0.1]
+
+TASK: [install_vaizrdemo_on_tomcat | file path=/home/{{username}}/bin/installvaizrdemo.sh state=touch mode=0755] *** 
+changed: [127.0.0.1]
+
+TASK: [install_vaizrdemo_on_tomcat | execute shell script] ******************** 
+changed: [127.0.0.1]
+
+TASK: [development_tools | google apt setup key] ****************************** 
+changed: [127.0.0.1]
+
+TASK: [development_tools | google apt setup repository] *********************** 
+changed: [127.0.0.1]
+
+TASK: [development_tools | Install packages] ********************************** 
+changed: [127.0.0.1] => (item=groovy,maven2,firefox,google-chrome-stable)
+
+TASK: [development_tools | Copy .hgrc] **************************************** 
+changed: [127.0.0.1]
+
+TASK: [development_tools | Set X-windows public key on lvm] ******************* 
+skipping: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemo | Create directories for username] ************ 
+changed: [127.0.0.1] => (item=/home/vaizrdemo/.m2/repository/nl/alfa/acdc/ACDC/1.0-SNAPSHOT)
+changed: [127.0.0.1] => (item=/home/vaizrdemo/.m2/repository/com/oracle/ojdbc6/11.2.0)
+
+TASK: [git_clone_pull_vaizrdemo | Copy acdc jar file from maven_dependencies to maven_repository] *** 
+changed: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemo | Copy acdc pom files from maven_dependencies to maven_repository] *** 
+changed: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemo | Copy ojdbc6 jar file from maven_dependencies to maven_repository] *** 
+changed: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemo | Checkout vaizrdemo files from gitlab] ******* 
+changed: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemo | change owner vaizrdemo] ********************* 
+changed: [127.0.0.1]
+
+TASK: [git_clone_pull_vaizrdemo | change owner vaizrdemode] ******************* 
+changed: [127.0.0.1]
+
+TASK: [mvn_clean_install_vaizrdemo | mvn clean install vaizrdemo] ************* 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | download file from a file path] ********************* 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | file path=/home/{{username}}/netbeans-8.1-javaee-linux.sh state=touch mode=0755] *** 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | file path=/home/{{username}}/bin state=directory mode=0755] *** 
+ok: [127.0.0.1]
+
+TASK: [prepare_netbeans | create install_vaizrdemo-1.0-SNAPSHOT_xml file] ***** 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | file path=/home/{{username}}/bin/install_vaizrdemo-1.0-SNAPSHOT_xml.sh state=touch mode=0755] *** 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | create netbeans start file] ************************* 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | file path=/home/{{username}}/bin/netbeans state=touch mode=0755] *** 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | create install_netbeans start file] ***************** 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | file path=/home/{{username}}/bin/install_netbeans state=touch mode=0755] *** 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | Create directories for groovy libraries] ************ 
+changed: [127.0.0.1] => (item=/home/vaizrdemo/.groovy/lib)
+
+TASK: [prepare_netbeans | install PostgreSQL jar in groovy library] *********** 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | install Oracle jar in groovy library] *************** 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | install MySQL jar in groovy library] **************** 
+changed: [127.0.0.1]
+
+TASK: [prepare_netbeans | install commons-lang3 jar in groovy library] ******** 
+changed: [127.0.0.1]
+
+PLAY RECAP ******************************************************************** 
+127.0.0.1                  : ok=55   changed=49   unreachable=0    failed=0   
+
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+wait 5 seconds
+   5
+Tue Feb 7 14:09:48 CET 2017
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Successfully exported 1 machine(s).
+/Users/nosinga/workspaces/vaizr/vaizrdemodeployment/virtualbox
+-rw-------  1 nosinga  staff  2455765504 Feb  7 14:13 ./../../vaizrdemobox.ova
+-rw-------  1 nosinga  staff  2364276224 Feb  7 11:14 ./../../vaizrdemobox.ova.~1~
+-rw-------  1 nosinga  staff  2181345792 Feb  7 12:10 ./../../vaizrdemobox.ova.~2~
+Tue Feb 7 14:13:17 CET 2017
+********** finish make_vaizrdemobox.sh on virtualbox **********
+Nannes-MacBook-Pro:install nosinga$ 
