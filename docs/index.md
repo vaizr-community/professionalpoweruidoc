@@ -3,7 +3,7 @@ Vaizr currently has two distinctive products. The Vaizr Professional Power UI an
 
 Vaizr Professional Power UI is a fast, simple and open low-code platform that's geared towards building enterprise-ready applications fast.
 
-Vaizr REST API Platform combines the strength of the pivotal spring REST Api, the pivotal OAuth2 implementation and the the swagger tools. The platform works out of the box.
+Vaizr REST API Platform combines the strength of the pivotal spring REST API, the pivotal OAuth2 implementation and the the Swagger tools. The platform works out of the box.
 
 ### Host anywhere
 Vaizr builds completely independent war's which run on any Sevlet Engine.
