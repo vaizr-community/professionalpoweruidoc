@@ -9,6 +9,9 @@ pages:
       -
          ? "Getting Started"
          : professionalpowerui/index.md
+      -
+         ? "Generate Master Detail"
+         : professionalpowerui/masterdetail.md
   # -
   #   ? "Vaizr REST API"
   #   :

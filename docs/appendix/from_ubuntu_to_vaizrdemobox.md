@@ -25,7 +25,7 @@ We start here with the `.ova` file. `ubuntu-14.04-server-amd64.ova`
 4. Go to settings  
   
         ==> Network ==> Adapter 1 ==> Port Forwarding
-                * Name:ssh      ,Protocol:TCP ,Host Port:2233 ,Guest Port:22  
+                * Name:ssh      ,Protocol:TCP ,Host Port:2222 ,Guest Port:22  
                 * Name:Apache   ,Protocol:TCP ,Host Port:8181 ,Guest Port:80  
                 * Name:Tomcat   ,Protocol:TCP ,Host Port:8080 ,Guest Port:8080  
                 * Name:NetBeans ,Protocol:TCP ,Host Port:8084 ,Guest Port:8084  
@@ -114,11 +114,11 @@ We start here with the `.ova` file. `ubuntu-14.04-server-amd64.ova`
 5. run as `vaizrdemo` the `localinstall_all.sh` script on the `vaizrdemobox`.  
    This script can be found in the `vaizrdemohostscripts` under `install`.  
    You can sftp the script to the vaizrdemobox or you can execute it directly with an ssh command.  
-   If you have an ssh prompt you can run the following command: `ssh vaizrdemo@localhost -p 2233 < localinstall_all.sh`
+   If you have an ssh prompt you can run the following command: `ssh vaizrdemo@localhost -p 2222 < localinstall_all.sh`
 
                    Nannes-MacBook-Pro:install nosinga$ pwd
                    /Users/nosinga/workspaces/vaizr/vaizrdemodeployment/install
-                   Nannes-MacBook-Pro:install nosinga$ ssh vaizrdemo@localhost -p 2233 < localinstall_all.sh
+                   Nannes-MacBook-Pro:install nosinga$ ssh vaizrdemo@localhost -p 2222 < localinstall_all.sh
                    
                    Pseudo-terminal will not be allocated because stdin is not a terminal.
                    vaizrdemo@127.0.0.1's password: 
