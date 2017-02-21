@@ -34,7 +34,7 @@ So in short you have to execute the following four steps:
     * Linux provided with a GUI comes with a X-Windows server out of the box.  
     * For Windows use <a href="http://mobaxterm.mobatek.net/" target="_blank"> MobaXterm</a>.  
 
-You can directly logon to the machine or use SSH to log on. We will first start with X-Windows interface to explore the demo machine. We will also install IntelliJ to develop a Master Detail screen in the next Chapter.
+You can directly logon to the machine or use SSH to log on. We will first start with X-Windows interface to explore the demo machine. We will also install IntelliJ to generate some screens in the next Chapter.
 
 ### Run Vaizr Development machine
 1. Start Virtual box, you actually start your virtual machine host.
