@@ -270,6 +270,6 @@ You can also host your vaizrdemobox at AWS.
                    Nannes-MacBook-Pro:install nosinga$ 
 
 
-At this point we have created the start situation for [Getting Started](./index.md)
+At this point we have created the start situation for [Getting Started](./../professionalpowerui/gettingstarted)
 
 

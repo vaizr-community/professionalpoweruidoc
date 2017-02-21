@@ -8,9 +8,9 @@ pages:
     :
       -
          ? "Getting Started"
-         : professionalpowerui/index.md
+         : professionalpowerui/gettingstarted.md
       -
-         ? "Generate Master Detail"
+         ? "Generate Screens"
          : professionalpowerui/masterdetail.md
   # -
   #   ? "Vaizr REST API"
@@ -27,6 +27,12 @@ pages:
       -  
          ? "Onboarding"
          : appendix/onboarding.md
+      -  
+         ? "Mac, Linux and X-Windows"
+         : appendix/mac_xquartz.md
+      -  
+         ? "Windows and X-Windows"
+         : appendix/windows_mobaxterm.md
       -
          ? "From Ubuntu 14.04 to virtualdemobox"
          :  appendix/from_ubuntu_to_vaizrdemobox.md
