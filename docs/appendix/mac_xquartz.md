@@ -152,6 +152,6 @@ You can login with:
 username : `nanne`  
 password : `nanneo`  
 
-Click [Here](./../../../professionalpowerui/gettingstarted) to return to [Getting Started](./../../../professionalpowerui/gettingstarted)  
+Click [Here](./../professionalpowerui/gettingstarted) to return to [Getting Started](./../professionalpowerui/gettingstarted)  
 
-Click [Here](./../../../professionalpowerui/masterdetail) to continue with [Generating Master Detail](./../../../professionalpowerui/masterdetail)
+Click [Here](./../professionalpowerui/masterdetail) to continue with [Generating Master Detail](./../professionalpowerui/masterdetail)

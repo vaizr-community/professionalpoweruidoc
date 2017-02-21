@@ -17,7 +17,7 @@ However building the Vaizr development virtual machine is also easy. Building th
 ## Getting started
 
 ### <a href="./../downloads/leavemail" target="_blank">Download the different components</a>
-There are several ways to get started but the quickest way of getting started is to by downloading the <a href="./../downloads/leavemail" target="_blank">Vaizr development virtual machine</a>.  
+There are several ways to get started but the quickest way of getting started is to by downloading the <a href="./../../downloads/leavemail" target="_blank">Vaizr development virtual machine</a>.  
 
 Before you can run the virtual machine on your host you have to install
 <a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a>.  
@@ -26,8 +26,8 @@ To run the prepackaged development tools on the virtual machine you also have to
 So in short you have to execute the following four steps:  
 
 1. Download and Install <a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a>.  
-2. Download and Install <a href="./../downloads/leavemail" target="_blank">Vaizr development virtual machine</a>.  
-3. Download and Unzip <a href="./../downloads/leavemail" target="_blank">Vaizr development host scripts</a>  
+2. Download and Install <a href="./../../downloads/leavemail" target="_blank">Vaizr development virtual machine</a>.  
+3. Download and Unzip <a href="./../../downloads/leavemail" target="_blank">Vaizr development host scripts</a>  
 4. Download and Install an X-Windows server.  
     
     * For Mac use <a href='https://www.xquartz.org/' target='_blank'>XQuartz</a>.
