@@ -110,7 +110,7 @@ On windows you need to install an **X-server** and you get proper **ssh** suppor
 2. choose `OK`
 
 ## Run GUI tools on vaizrdemobox
-One last remark about X-Windows Server and Windows and Mac. On Mac we can execute the scripts directly from the host. However to run convienant the commands we have to set the guest with the `. ./guest_set_execute_env.sh` before and execute the commands with `. ./` in front of the actual command. On Windows it is more convienant to start the SSH session from within MobaXterm. After logging on to the Ubuntu box we can simply execute the command. Since on the Vaizr Demo Ubuntu box the scripts are packaged in the ~/bin directory which has been added to the Path. In this chapter I will repeat the commands twice but after this chapter I will normally only show the host version.
+One last remark about X-Windows Server and Windows and Mac. On Mac we can execute the scripts directly from the host. However to run convenient the commands we have to set the guest with the `. ./set_execute_env.sh` before and execute the commands with `. ./` in front of the actual command. On Windows it is more convienant to start the SSH session from within MobaXterm. After logging on to the Ubuntu box we can simply execute the command. Since on the Vaizr Demo Ubuntu box the scripts are packaged in the ~/bin directory which has been added to the Path. In this chapter I will repeat the commands twice but after this chapter I will normally only show the host version.
 
 >  * host ==> **Mac**, run command in **terminal**
 >   * guest ==> **Windows**, run command in **MobaXerm terminal**  
@@ -129,6 +129,6 @@ You can login with:
 username : `nanne`  
 password : `nanneo`  
 
-Click [Here](./../../professionalpowerui/gettingstarted) to return to [Getting Started](./../../professionalpowerui/gettingstarted)  
+Click [Here](./../../../professionalpowerui/gettingstarted) to return to [Getting Started](./../../../professionalpowerui/gettingstarted)  
 
-Click [Here](./../../professionalpowerui/masterdetail) to continue with [Generating Master Detail](./../../professionalpowerui/masterdetail)
+Click [Here](./../../../professionalpowerui/masterdetail) to continue with [Generating Master Detail](./../../../professionalpowerui/masterdetail)

@@ -8,7 +8,7 @@ Vaizr builds completely independent war's, which run on any Sevlet Engine.  Howe
 
 The demo development environment runs completely on the ubuntu box. The GUI of IntelliJ and the different browsers like google-chrome and firefox are displayed to you via **X-Windows**. The X-Windows software on your machine is called the **host** or **server**. The X-Windows part on the remote machine, the vaizrdemobox either on VirtualBox or on AWS are called the **guest** or **client**.
 
-This client–server terminology – the user's terminal being the server and the applications being the clients – often confuses new **X** users, because the terms appear reversed. But X takes the perspective of the application, rather than that of the end-user: X provides display and I/O services to applications, so it is a server; applications use these services, thus they are clients. More information on <a href="https://en.wikipedia.org/wiki/X_Window_System" target="_blank">X-Windows</a> you can find <a href="https://en.wikipedia.org/wiki/X_Window_System" target="_blank">here</a> 
+This client–server terminology – the user's terminal being the server and the applications being the clients – often confuses new **X** users, because the terms appear reversed. But X takes the perspective of the application, rather than that of the end-user: X provides display and I/O services to applications, so it is a server; applications use these services, thus they are clients. More information on <a href="https://en.wikipedia.org/wiki/X_Window_System" target="_blank">X-Windows</a> you can find <a href="https://en.wikipedia.org/wiki/X_Window_System" target="_blank">here</a>. 
 
 The quickest way to get started is by downloading the Vaizr development virtual machine.
 
@@ -49,6 +49,9 @@ You can directly logon to the machine or use SSH to log on. We will first start 
 Double-clicking on the `vaizrdemobox.ova` in your finder or file explorer gives the same result as the first four steps above.  
 Click `Import`
 Selecting and Double-clicking again on the `vaizrdemobox` in left pane of the **Oracle VM Virtual Box Manager** activates the remaining step six, seven and eight.
+
+Running applications on Virtualbox has some usances which you have get used to. One of them is **Auto Capture**. Don't worry you will get used to it and find your way.
+![virtual_box_autocapture_explained](./../images/virtual_box_autocapture_explained.png)
 
 ### Virtual box needs an enabled VT-x
 

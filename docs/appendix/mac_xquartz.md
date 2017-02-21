@@ -2,7 +2,10 @@
 
 ## Download and install XQuartz
 
-For Max : Download and install <a href='https://www.xquartz.org/' target='_blank'>XQuartz</a>  
+For Mac : Download and install <a href='https://www.xquartz.org/' target='_blank'>XQuartz</a>.  
+
+You never have to start **XQuartz** separately. **XQuartz** will be started **automatically** by running the proper **ssh** commands.  
+
 For Linux : A proper Linux desktop is equipped with a X-Windows server.
 
 ## Run SSH
@@ -120,7 +123,9 @@ Unzip the vaizrdemohostscripts.zip and go with the command prompt in the **cli**
         The trick is that we use a private key (a .pem file) 
         to logon without a password
 
-If all goes well you should see the **Ubuntu Start Page Mozilla Firefox**
+Ignore the errors which flow over your terminal screen, it's ok as long as you see the firefox screen starting.  
+
+If all goes well you should see the **Ubuntu Start Page Mozilla Firefox**  
 
 You can do the same with Google-Chrome. Google-Chrome can be started. You activate chrome by accepting the presented two options.
 
@@ -128,7 +133,7 @@ You can do the same with Google-Chrome. Google-Chrome can be started. You activa
 2. choose `OK`
 
 ## Run GUI tools on vaizrdemobox
-One last remark about X-Windows Server and Windows and Mac. On Mac we can execute the scripts directly from the host. However to run convienant the commands we have to set the guest with the `. ./guest_set_execute_env.sh` before and execute the commands with `. ./` in front of the actual command. On Windows it is more convienant to start the SSH session from within MobaXterm. After logging on to the Ubuntu box we can simply execute the command. Since on the Vaizr Demo Ubuntu box the scripts are packaged in the ~/bin directory which has been added to the Path. In this chapter I will repeat the commands twice but after this chapter I will normally only show the host version.
+One last remark about X-Windows Server and Windows and Mac. On Mac we can execute the scripts directly from the host. However to run convienant the commands we have to set the guest with the `. ./set_execute_env.sh` before and execute the commands with `. ./` in front of the actual command. On Windows it is more convenient to start the SSH session from within MobaXterm. After logging on to the Ubuntu box we can simply execute the command. Since on the Vaizr Demo Ubuntu box the scripts are packaged in the ~/bin directory which has been added to the Path. In this chapter I will repeat the commands twice but after this chapter I will normally only show the host version.
 
 >  * host ==> **Mac**, run command in **terminal**
 >   * guest ==> **Windows**, run command in **MobaXerm terminal**  
@@ -147,6 +152,6 @@ You can login with:
 username : `nanne`  
 password : `nanneo`  
 
-Click [Here](./../../professionalpowerui/gettingstarted) to return to [Getting Started](./../../professionalpowerui/gettingstarted)  
+Click [Here](./../../../professionalpowerui/gettingstarted) to return to [Getting Started](./../../../professionalpowerui/gettingstarted)  
 
-Click [Here](./../../professionalpowerui/masterdetail) to continue with [Generating Master Detail](./../../professionalpowerui/masterdetail)
+Click [Here](./../../../professionalpowerui/masterdetail) to continue with [Generating Master Detail](./../../../professionalpowerui/masterdetail)

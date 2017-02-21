@@ -80,7 +80,7 @@ In the **Please enter a name to create a new IntelliJ IDEA project.**  Click `Fi
 Finally De-Select **Show Tips on Startup**  
 And click `Close`
 
-##Once again these above steps you only have to do *Once*
+##Once again the above steps you only have to do *Once*
 
 Now **wait** till indexing is **finished** You can see that at the bottom of the screen
 ![intellij_indexing_busy](./../images/masterdetail/intellij_indexing_busy.png)
@@ -98,7 +98,7 @@ For this tutorial we have to connect to the database. Implicit we connected to s
       database : vaizrdemo
       portnumber : 5432
 
-There are several ways to connect to the database. Now we use the command line in IntelliJ. For your convience **pgadmin3** is also installed on the vaizrdemobox.   
+There are several ways to connect to the database. Now we use the command line in IntelliJ. For your convenience **pgadmin3** is also installed on the vaizrdemobox.   
 
 ![intellij_start_other_commands](./../images/masterdetail/intellij_start_other_commands.png)
 Put your mouse over the little dark square in the bottom left.
@@ -212,7 +212,8 @@ After running the **Run 'Step04_BuildDeploy2Tomcat'**. You should see the follow
 ![step04_builddeploy2tomcat_result](./../images/masterdetail/step04_builddeploy2tomcat_result.png)
 
 ## Copy generated menu part into application menu  
-Our build tasks in IntelliJ are finished and the last couple of tasks will be executed within the Vaizr Application. We have to make the new screens accessible in the menu of the Vaizr Application. This step consists of two actions.  
+Our build tasks in IntelliJ are finished and the last couple of tasks will be executed within the **Web Interface** of the Vaizr Demo Application.   
+We have to make the new screens accessible in the menu of the Vaizr Application. This step consists of two actions.  
 1. Add the new screen to the menu.  
 2. Give permission on menu and screens to the proper role.  
 
@@ -361,7 +362,9 @@ Click on the activated `Add` button in the role permission sub part.
 
 ![vaizr_permissions_roles](./../images/masterdetail/vaizr_permissions_roles.png)
 Next we are adding the role **SuperAdmin**. Just type `s` in the field.  
-Click on `SuperAdmin` which appears on the screen
+Click on `SuperAdmin` which appears on the screen.  
+Click on `Save` or `Save and Close`.  
+Close the open windows.  
 
 ![vaizr_logoff](./../images/masterdetail/vaizr_logoff.png)
 After saving and closing the windows we **log off** and **log on** again to check our work.
